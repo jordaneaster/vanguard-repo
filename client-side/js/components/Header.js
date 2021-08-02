@@ -1,8 +1,10 @@
 import "../../css/header_footer.css";
+import HRHeart from '../../images/hr-logo-heart.png'
 
 export default function Header() {
   return `
   <nav>
+  <img class="logoHeart" src="${HRHeart}" alt="" />
   	<input type="checkbox">
 	<label>&equiv;</label>
         <ul>  
@@ -17,8 +19,7 @@ export default function Header() {
             <li class='nav__list_alternatives'>Alternatives</li>
             <li class='nav__list_responses'>Responses</li>
             <li class='nav__list_reviews'>Reviews</li>
-          
-        </ul>
+        </ul>    
     </nav>
         `;
 }

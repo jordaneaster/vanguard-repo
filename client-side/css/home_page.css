@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(212, 209, 209);
+    background: #d4dcdd;
 }
 .slideShowGrid {
     display: grid;
@@ -78,8 +78,9 @@ body {
            padding: 15px;
         }
         .testButton {
-            background-color: rgb(27, 150, 150);
+            background-color: #71D8E7;
             border-radius: 15%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
             font-size: larger;
             height: 30px;
         }
@@ -120,10 +121,11 @@ body {
         height: 400px;
     }
     .articleButton {
-        background-color: rgb(27, 150, 150);
+        background-color: #71D8E7;
+        border-radius: 15%;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
         font-size: larger;
         height: 30px;
-        border-radius: 15%;
     }
     .memberGrid {
         align-items: center;
@@ -149,11 +151,16 @@ body {
         height: 400px;
     }
     .memberButton {
-        background-color: rgb(27, 150, 150);
+        background-color: #71D8E7;
+        border-radius: 15%; 
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
         font-size: larger;
         height: 30px;
-        border-radius: 15%;
     }
+   .up {
+    margin-bottom: 65px;
+    margin-top: -90px;
+   }
     .reviewBlurb {
         align-items: center;
     }
@@ -163,7 +170,6 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        border: double;
         height: 60vh;
         margin-right: -40px;
         position: relative;

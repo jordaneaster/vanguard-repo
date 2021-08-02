@@ -71,7 +71,7 @@ export default function HomePage() {
         <div class="text bottom">
         <h2> INSERT CONTENT - INSERT CONTENT - INSERT CONTENT - INSERT CONTENT - INSERT CONTENT - INSERT CONTENT  </h2>
         </div>
-        <div id="slideshow" class="slideshow" data-component="slideshow">
+        <div id="slideshow" class="slideshow up" data-component="slideshow">
         <div role="list">
           <div class="slideShowGrid">
               <img class="SS1" src="${SS4}" alt=""/>

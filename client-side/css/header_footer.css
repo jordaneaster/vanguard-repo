@@ -125,6 +125,12 @@
 	font-size: large;
 }
 
+.logoHeart {
+	height: 190px;
+	margin-left: -200px;
+	margin-top: -75px;
+
+}
 .footer_list_aboutUs {
 	border-radius: 6px;
 	cursor: pointer;
@@ -160,7 +166,7 @@
 
 /* horizontal navigation: define the navigation font and basic background */
 nav {
-  background-color: rgb(165, 175, 177);
+  background-color: #36909E;
   font:normal bold 11px Arial,Sans-Serif;
   color: whitesmoke;
   height:30px;

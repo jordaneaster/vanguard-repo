@@ -6,7 +6,6 @@ export default function LoginDraft() {
     <div class="container">
      <img class="loginLogo" src="${LoginLogo}" alt="healthy response logo"/>
      <form class="loginFields">
-     <div> 
      <div class="userNameLogin">
      <input type="text" id="userNameLogin" name="username" placeholder="USERNAME">
      </div>
@@ -17,9 +16,7 @@ export default function LoginDraft() {
       <input type="submit" value="LOGIN">
       </div>
       <p class="loginTOS">TERMS OF SERVICE</p>
-      </div> 
-
-  </form>
+      </form>
     </div>  
   
   
