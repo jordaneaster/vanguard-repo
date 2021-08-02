@@ -39,7 +39,7 @@ export default function HomePage() {
         </div>
         </div>
         <div class="inspoQuote">
-        <img class="quote" src="${Quote}" alt=""/>
+        <div class="inspirational_quote__container"></div>
         </div>
         <div class="testGrid">
         <img class="T1" src="${Test1}" alt="" />

@@ -12,6 +12,7 @@ public class Trigger {
     @GeneratedValue
     private Long id;
     private String name;
+    @Lob
     private String description;
     @ManyToMany(mappedBy = "trigger")
     private Collection<Mood> mood;
@@ -49,6 +50,10 @@ public class Trigger {
         this.name = name;
         this.description = description;
         this.copingMechanism = Arrays.asList(copingMechanism);
+    }
+    public Trigger(String name,String description){
+        this.name = name;
+        this.description = description;
     }
     @Override
     public boolean equals(Object o) {

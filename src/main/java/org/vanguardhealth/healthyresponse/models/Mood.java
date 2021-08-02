@@ -46,6 +46,9 @@ public class Mood {
         this.mood = mood;
         this.trigger = Arrays.asList(trigger);
     }
+    public Mood(String mood){
+        this.mood = mood;
+    }
     public Mood(){}
 
     @Override

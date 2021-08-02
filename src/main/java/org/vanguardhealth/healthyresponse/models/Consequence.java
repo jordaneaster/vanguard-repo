@@ -13,6 +13,7 @@ public class Consequence {
     @GeneratedValue
     private Long id;
     private String title;
+    @Lob
     private String description;
 
     public Long getId() {
@@ -40,6 +41,10 @@ public class Consequence {
         this.title = title;
         this.description = description;
         this.results = Arrays.asList(results);
+    }
+    public Consequence(String title, String description){
+        this.title = title;
+        this.description = description;
     }
 
     @Override

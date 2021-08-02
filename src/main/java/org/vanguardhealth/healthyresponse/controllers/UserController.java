@@ -5,13 +5,13 @@ import org.json.JSONObject;
 import org.springframework.web.bind.annotation.*;
 import org.vanguardhealth.healthyresponse.models.CopingMechanism;
 import org.vanguardhealth.healthyresponse.models.Mood;
-import org.vanguardhealth.healthyresponse.models.Trigger;
 import org.vanguardhealth.healthyresponse.models.User;
 import org.vanguardhealth.healthyresponse.repositories.*;
 
 import javax.annotation.Resource;
 import java.util.Optional;
 
+@CrossOrigin
 @RestController
 public class UserController {
 
@@ -37,6 +37,7 @@ public class UserController {
     public User getUser(@PathVariable Long id){
         return userRepo.findById(id).get();
     }
+
     @GetMapping("users/{userId}/coping/{copingId}")
     public CopingMechanism getUserByCoping(@PathVariable Long userId, @PathVariable Long copingId){
         User foundUser = userRepo.findById(userId).get();
@@ -48,21 +49,23 @@ public class UserController {
 return foundUser.getCopingMechanism();
     }
     @PostMapping(value = "/create_user_profile")
-    public User createUserProfile(@RequestBody String body, @PathVariable Long id)throws JSONException{
+    public Iterable<User> createUserProfile(@RequestBody String body)throws JSONException{
         JSONObject newUser = new JSONObject(body);
         String userName = newUser.getString("userName");
         String password = newUser.getString("password");
         int age = newUser.getInt("age");
-        Mood mood = (Mood) newUser.get("mood");
-        Trigger trigger = (Trigger) newUser.get("trigger");
-        CopingMechanism copingMechanism = (CopingMechanism) newUser.get("copingMechanism");
+        String mood = newUser.getString("mood");
+        Mood moodSelected = moodRepo.findByMood(mood);
+//        Mood mood = (Mood) newUser.get("mood");
+//        Trigger trigger = (Trigger) newUser.get("trigger");
+//        CopingMechanism copingMechanism = (CopingMechanism) newUser.get("copingMechanism");
         Optional<User> optionalUser = userRepo.findByUserName(userName);
 
         if(optionalUser.isEmpty()){
-            User userToAdd = new User(userName,password,age,mood,copingMechanism,trigger);
+            User userToAdd = new User(userName,password,age,moodSelected);
             userRepo.save(userToAdd);
         }
-        return userRepo.findById(id).get();
+        return userRepo.findAll();
 
     }
 

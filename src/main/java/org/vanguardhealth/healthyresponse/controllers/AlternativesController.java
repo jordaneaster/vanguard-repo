@@ -4,13 +4,14 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-import org.vanguardhealth.healthyresponse.models.Consequence;
+import org.vanguardhealth.healthyresponse.models.Alternatives;
 import org.vanguardhealth.healthyresponse.repositories.*;
 
 import javax.annotation.Resource;
-@CrossOrigin
+
 @RestController
-public class ConsequenceController {
+@CrossOrigin
+public class AlternativesController {
     @Resource
     private UserRepo userRepo;
     @Resource
@@ -23,13 +24,15 @@ public class ConsequenceController {
     private TriggerRepo triggerRepo;
     @Resource
     private MoodRepo moodRepo;
+    @Resource
+    private AlternativesRepo alternativesRepo;
 
-    @GetMapping("/consequences")
-    public Iterable<Consequence> getConsequences(){
-        return consequenceRepo.findAll();
+    @GetMapping("/alternatives")
+    public Iterable<Alternatives> getMoods(){
+        return  alternativesRepo.findAll();
     }
-    @GetMapping("/consequence/{id}")
-    public Consequence getConsequence(@PathVariable Long id){
-        return consequenceRepo.findById(id).get();
+    @GetMapping("alternative/{id}")
+    public Alternatives getMood(@PathVariable Long id){
+        return alternativesRepo.findById(id).get();
     }
 }

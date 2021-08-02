@@ -15,6 +15,7 @@ public class CopingMechanism {
     @GeneratedValue
     private Long id;
     private String title;
+    @Lob
     private String description;
 
 
@@ -46,6 +47,10 @@ public class CopingMechanism {
         this.title = title;
         this.description = description;
         this.consequences = Arrays.asList(consequences);
+    }
+    public CopingMechanism(String title,String description){
+        this.title = title;
+        this.description = description;
     }
 
     @Override

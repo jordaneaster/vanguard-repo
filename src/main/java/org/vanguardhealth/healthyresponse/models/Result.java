@@ -42,6 +42,10 @@ public class Result {
         this.impact = impact;
         this.alternatives = Arrays.asList(alternatives);
     }
+    public Result(String title,String impact){
+        this.impact = impact;
+        this.title = title;
+    }
 
     public Result() {}
 

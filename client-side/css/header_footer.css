@@ -140,6 +140,14 @@
 	font-size: large;
 }
 
+.nav__list_appointment {
+  border-radius: 6px;
+	cursor: pointer;
+	padding: 8px;
+	margin-left: 20px;
+	list-style-type: none;
+}
+
 .footer_list_contactUs {
 	border-radius: 6px;
 	cursor: pointer;
@@ -163,6 +171,7 @@
 	justify-content: center;
 	font-size: large;
 }
+
 
 /* horizontal navigation: define the navigation font and basic background */
 nav {

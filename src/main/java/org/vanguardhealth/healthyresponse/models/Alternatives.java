@@ -11,6 +11,7 @@ public class Alternatives {
     @Id
     @GeneratedValue
     private Long id;
+    @Lob
     private String description;
     private String title;
 

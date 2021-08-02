@@ -1,4 +1,4 @@
-export default function user_login() {
+export default function LoginPage() {
   return `
   
 <h1 class="test">
@@ -10,15 +10,15 @@ export default function user_login() {
       <input type="text" class="password" placeholder="Password" />
       <input type="text" class="age" placeholder="Age" />
       <select name="cbtMood" id="assessMood" class="intake">
-        <option value="userMood" class="cbt">I feel..</option>
-        <option value="userMood" class="cbt">Lonely</option>
-        <option value="userMood" class="cbt">Sad</option>
-        <option value="userMood" class="cbt">Depressed</option>
-        <option value="userMood" class="cbt">Hopeless</option>
-        <option value="userMood" class="cbt">Suicidal</option>
-        <option value="userMood" class="cbt">Violent</option>
-        <option value="userMood" class="cbt">Exhausted</option>
-        <option value="userMood" class="cbt">Misunderstood</option>
+        <option value="userMood" class="cbt1">I feel..</option>
+        <option value="Lonely" class="cbt2">Lonely</option>
+        <option value="Sad" class="cbt3">Sad</option>
+        <option value="Depressed" class="cbt4">Depressed</option>
+        <option value="Hopeless" class="cbt5">Hopeless</option>
+        <option value="Suicidal" class="cbt6">Suicidal</option>
+        <option value="Violent" class="cbt7">Violent</option>
+        <option value="Exhausted" class="cbt8">Exhausted</option>
+        <option value="Misunderstood" class="cbt9">Misunderstood</option>
       </select>
       <select name="cbtTrigger" id="assessTrigger" class="intake">
         <option value="userTrigger" class="cbt">Beause of...</option>
@@ -46,5 +46,3 @@ export default function user_login() {
       </section>
 `;
 }
-
-   

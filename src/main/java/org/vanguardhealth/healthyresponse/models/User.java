@@ -25,6 +25,19 @@ public class User {
     @ManyToOne
     private CopingMechanism copingMechanism;
 
+    public User(String userName, String password, int age, Mood mood) {
+        this.userName = userName;
+        this.password = password;
+        this.age = age;
+        this.mood = mood;
+    }
+
+    public User(String userName, String password, int age) {
+        this.userName=userName;
+        this.password=password;
+        this.age=age;
+    }
+
 
     public Long getId() {
         return id;
@@ -55,6 +68,9 @@ public class User {
     }
 
     public User(){}
+    public User(String userName){
+        this.userName = userName;
+    }
     public User(String userName, String password, int age, Mood mood,
                 CopingMechanism copingMechanism, Trigger trigger){
         this.userName = userName;
