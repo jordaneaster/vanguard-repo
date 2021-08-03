@@ -5,10 +5,12 @@ import org.json.JSONObject;
 import org.springframework.web.bind.annotation.*;
 import org.vanguardhealth.healthyresponse.models.CopingMechanism;
 import org.vanguardhealth.healthyresponse.models.Mood;
+import org.vanguardhealth.healthyresponse.models.Trigger;
 import org.vanguardhealth.healthyresponse.models.User;
 import org.vanguardhealth.healthyresponse.repositories.*;
 
 import javax.annotation.Resource;
+import javax.swing.text.html.Option;
 import java.util.Optional;
 
 @CrossOrigin
@@ -37,16 +39,16 @@ public class UserController {
     public User getUser(@PathVariable Long id){
         return userRepo.findById(id).get();
     }
+    @PostMapping("/users/{id}/mood/{moodId}")
+    public String getUserCoping(@PathVariable Long id,@PathVariable Long moodId){
+        Optional<Mood> moodToAddOpt = moodRepo.findById(moodId);
+        Mood moodToAdd = moodToAddOpt.get();
 
-    @GetMapping("users/{userId}/coping/{copingId}")
-    public CopingMechanism getUserByCoping(@PathVariable Long userId, @PathVariable Long copingId){
-        User foundUser = userRepo.findById(userId).get();
-        Optional<CopingMechanism> copingMechanismOpt = copingRepo.findById(copingId);
-        if(copingMechanismOpt.isPresent()){
-            foundUser.getCopingMechanism();
-        }
+        Optional<User> userToAddMoodToOpt = userRepo.findById(id);
+        User userToAddMoodTo = userToAddMoodToOpt.get();
+        userToAddMoodTo.addMood(moodToAdd);
 
-return foundUser.getCopingMechanism();
+        return "redirect:/user/" +id;
     }
     @PostMapping(value = "/create_user_profile")
     public Iterable<User> createUserProfile(@RequestBody String body)throws JSONException{
@@ -56,13 +58,15 @@ return foundUser.getCopingMechanism();
         int age = newUser.getInt("age");
         String mood = newUser.getString("mood");
         Mood moodSelected = moodRepo.findByMood(mood);
-//        Mood mood = (Mood) newUser.get("mood");
-//        Trigger trigger = (Trigger) newUser.get("trigger");
+        String trigger = newUser.getString("trigger");
+        Trigger triggerSelected = triggerRepo.findByName(trigger);
+        String copingMechanism = newUser.getString("copingMechanism");
+        CopingMechanism copingMechanismSelected = copingRepo.findByTitle(copingMechanism);
 //        CopingMechanism copingMechanism = (CopingMechanism) newUser.get("copingMechanism");
         Optional<User> optionalUser = userRepo.findByUserName(userName);
 
         if(optionalUser.isEmpty()){
-            User userToAdd = new User(userName,password,age,moodSelected);
+            User userToAdd = new User(userName,password,age);
             userRepo.save(userToAdd);
         }
         return userRepo.findAll();
