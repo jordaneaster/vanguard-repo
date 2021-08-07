@@ -55,18 +55,10 @@ public class UserController {
         JSONObject newUser = new JSONObject(body);
         String userName = newUser.getString("userName");
         String password = newUser.getString("password");
-        int age = newUser.getInt("age");
-//        String mood = newUser.getString("mood");
-//        Mood moodSelected = moodRepo.findByMood(mood);
-//        String trigger = newUser.getString("trigger");
-//        Trigger triggerSelected = triggerRepo.findByName(trigger);
-//        String copingMechanism = newUser.getString("copingMechanism");
-//        CopingMechanism copingMechanismSelected = copingRepo.findByTitle(copingMechanism);
-////        CopingMechanism copingMechanism = (CopingMechanism) newUser.get("copingMechanism");
         Optional<User> optionalUser = userRepo.findByUserName(userName);
 
         if(optionalUser.isEmpty()){
-            User userToAdd = new User(userName,password,age);
+            User userToAdd = new User(userName,password);
             userRepo.save(userToAdd);
         }
         return userRepo.findAll();
