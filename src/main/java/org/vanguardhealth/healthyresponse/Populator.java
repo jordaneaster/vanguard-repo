@@ -61,6 +61,7 @@ public class Populator implements CommandLineRunner {
         Response testResponse = new Response(testTrigger,testCopingMechinism,testConsequence,testResult,testAlternative);
         responseRepo.save(testResponse);
 
+
         Mood afraid = new Mood("Afraid");
         Mood anxious = new Mood("Anxious");
         Mood sad = new Mood("Sad");
@@ -81,8 +82,7 @@ public class Populator implements CommandLineRunner {
         moodRepo.save(suicidal);
 
 
-        User testUser = new User("TESTusername","password",21,sad,testCopingMechinism, testTrigger);
-        userRepo.save(testUser);
+
 
 
 

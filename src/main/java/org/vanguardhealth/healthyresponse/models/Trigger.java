@@ -20,6 +20,10 @@ public class Trigger {
     @ManyToMany
     private Collection<CopingMechanism> copingMechanism;
 
+    public void addCoping(CopingMechanism addedCoping){
+        copingMechanism.add(addedCoping);
+    }
+
     @OneToMany(mappedBy = "trigger")
     @JsonIgnore
     private Collection<User> users;

@@ -11,11 +11,12 @@ import java.util.Objects;
 public class Mood {
 
 
-    private String mood;
+
 
     @Id
     @GeneratedValue
     private Long id;
+    private String mood;
 
     @ManyToMany(fetch = FetchType.LAZY)
     private Collection<Trigger> trigger;
@@ -36,6 +37,10 @@ public class Mood {
 
     public Collection<Trigger> getTrigger() {
         return trigger;
+    }
+
+    public void addTrigger(Trigger addedTrigger){
+        trigger.add(addedTrigger);
     }
 
     public String getMood() {

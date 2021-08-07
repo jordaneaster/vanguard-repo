@@ -22,7 +22,7 @@ import MemberS from '../../images/member-spotlight.jpg'
 import ReviewScene from '../../images/review-1.jpg'
 import VHSLogoBlack from '../../images/vhs-logo-black.png'
 
-export default function HomePage() {
+export default function HomePage(users) {
   return `
  <div id="slideshow" class="slideshow" data-component="slideshow">
   <div role="list">

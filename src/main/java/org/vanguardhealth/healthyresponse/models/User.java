@@ -1,7 +1,5 @@
 package org.vanguardhealth.healthyresponse.models;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import javax.persistence.*;
 import java.util.Objects;
 
@@ -63,8 +61,19 @@ public class User {
     public Trigger getTrigger() {
         return trigger;
     }
+
     public CopingMechanism getCopingMechanism() {
         return copingMechanism;
+    }
+
+    public Mood addMood(Mood addedMood){
+        return addedMood;
+    }
+    public CopingMechanism addCopingMechanism(CopingMechanism addedCoping){
+        return addedCoping;
+    }
+    public Trigger addTrigger(Trigger addedTrigger){
+        return addedTrigger;
     }
 
     public User(){}

@@ -8,6 +8,7 @@ export default function Header() {
         <ul>
             <li class='nav__list_home'>Home</li>
             <li class='nav__list_profile'>Profile</li>
+            <li class='nav_list_assessment'>Assessment</li>
             <li class='nav__list_moods'>Moods</li>
             <li class='nav__list_triggers'>Triggers</li>
             <li class='nav__list_coping_mechanisms'>Coping Mechanisms</li>

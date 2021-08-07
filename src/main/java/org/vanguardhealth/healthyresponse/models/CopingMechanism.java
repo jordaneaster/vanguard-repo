@@ -22,6 +22,9 @@ public class CopingMechanism {
 
     @ManyToMany
     private Collection <Consequence> consequences;
+    public void addConsequences(Consequence addedConsequence){
+        consequences.add(addedConsequence);
+    }
 
     @OneToMany(mappedBy = "copingMechanism",fetch = FetchType.LAZY)
     @JsonIgnore

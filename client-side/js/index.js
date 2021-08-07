@@ -19,20 +19,21 @@ import ContactUsPage from "./pages/ContactUsPage";
 import LegalPage from "./pages/LegalPage";
 import InspirationalQuote from "./components/InspirationalQuote";
 import LoginPage from "./pages/LoginPage";
-
-
+import IntakeMenu from "./rendering/IntakeMenu";
+import UserMood from "./rendering/UserMood";
+const intakemenu = new IntakeMenu();
 const app = document.querySelector("#app");
 const affirmation_api_url = "https://type.fit/api/quotes";
 // const affirmation_api_url ="https://zenquotes.io/api/quotes/";
 // const affirmation_api_url = 'https://zenquotes.io/api/today/';
 
 buildPage();
-
 function buildPage() {
+  
   header();
   footer();
-  renderUserLogin();
   home();
+  renderUserLogin();
   moods();
   triggers();
   copingMechanisms();
@@ -45,9 +46,8 @@ function buildPage() {
   contact();
   appointment();
   legal();
-  loginDraft();
+  navUserProfile();
   assessment();
-
 }
 
 function header() {
@@ -59,54 +59,108 @@ function footer() {
   footerElement.innerHTML = Footer();
 }
 
+function assessment() {
+  const assessment = document.querySelector(".nav_list_assessment");
+  assessment.addEventListener("click", () => {
+    app.innerHTML = AssessmentPage();
+  });
+}
+
+function removeHeader() {
+  const headerEl = document.querySelector(".body");
+  headerEl.addEventListener("onload", (event) => {
+    const headertoRemove = event.target.parentElement.querySelector(".header");
+    headertoRemove.remove();
+  });
+}
+
 function renderUserLogin() {
   app.innerHTML = LoginPage();
   app.addEventListener("click", (event) => {
-    console.log("firing");
     if (event.target.classList.contains("create_user")) {
       const userName =
         event.target.parentElement.querySelector(".userName").value;
       const password =
         event.target.parentElement.querySelector(".password").value;
       const age = event.target.parentElement.querySelector(".age").value;
-      const mood = event.target.parentElement.querySelector(".intake").value;
-      console.log(mood);
-      console.log(event.target);
       apiActions.postRequest(
         "http://localhost:8080/create_user_profile",
         {
           userName: userName,
           password: password,
           age: age,
-          mood: mood,
         },
-        (users) => (app.innerHTML = userWelcome(users))
+        (users) => (app.innerHTML = HomePage(users))
       );
-      apiActions.getRequest("http://localhost:8080:/users", (user) => {
-        app.innerHTML = userInfo(user);
-      });
     }
   });
 }
 
 function navUserProfile() {
-  const profilePage = document.querySelector(".nav_list_profile");
+  const profilePage = document.querySelector(".nav__list_profile");
   profilePage.addEventListener("click", () => {
     const app = document.querySelector("#app");
     apiActions.getRequest("http://localhost:8080/users", (user) => {
       app.innerHTML = userWelcome(user);
     });
-    renderUser();
   });
 }
 
-function renderUser() {
+function profileAssessment() {
   app.innerHTML = userWelcome();
   app.addEventListener("click", (event) => {
-    if (event.target.classList.contains(".userName")) {
-      const userId = event.target.parentElement.querySelector("#userId").value;
-      apiActions.getRequest(userId, (user) => {
-        app.innerHTML = userInfo(user);
+    if (event.target.classList.contains("assessBtn")) {
+      const moodMenu = document.querySelector("#assessMood");
+      const moodOption = document.getElementsByTagName("option");
+      moodMenu.addEventListener("change", () => {
+        if (moodOption[1].selected) {
+          apiActions.getRequest("http://localhost:8080/mood/10", (mood) => {
+            console.log(mood);
+            app.innerHTML = UserMood(mood);
+          });
+        }
+        if (moodOption[2].selected) {
+          apiActions.getRequest("http://localhost:8080/mood/11", (mood) => {
+            console.log(mood);
+            app.innerHTML = UserMood(mood);
+          });
+        }
+        if (moodOption[3].selected) {
+          apiActions.getRequest("http://localhost:8080/mood/12", (mood) => {
+            console.log(mood);
+            app.innerHTML = UserMood(mood);
+          });
+        }
+        if (moodOption[4].selected) {
+          apiActions.getRequest("http://localhost:8080/mood/13", (mood) => {
+            console.log(mood);
+            app.innerHTML = UserMood(mood);
+          });
+        }
+        if (moodOption[5].selected) {
+          apiActions.getRequest("http://localhost:8080/mood/14", (mood) => {
+            console.log(mood);
+            app.innerHTML = UserMood(mood);
+          });
+        }
+        if (moodOption[6].selected) {
+          apiActions.getRequest("http://localhost:8080/mood/15", (mood) => {
+            console.log(mood);
+            app.innerHTML = UserMood(mood);
+          });
+        }
+        if (moodOption[7].selected) {
+          apiActions.getRequest("http://localhost:8080/mood/16", (mood) => {
+            console.log(mood);
+            app.innerHTML = UserMood(mood);
+          });
+        }
+        if (moodOption[8].selected) {
+          apiActions.getRequest("http://localhost:8080/mood/17", (mood) => {
+            console.log(mood);
+            app.innerHTML = UserMood(mood);
+          });
+        }
       });
     }
   });
