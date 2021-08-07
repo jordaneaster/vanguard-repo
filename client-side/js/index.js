@@ -48,6 +48,7 @@ function buildPage() {
   legal();
   navUserProfile();
   assessment();
+  loginDraft();
 }
 
 function header() {
@@ -320,8 +321,12 @@ function slideShow() {
       }, time);
       }
       
-      function assessment() {
-      const assessmentElement = document.querySelector(".assessmentButton");
+      function assessmentButton() {
+        app.addEventListener("click", () => {
+        const assessmentElement = event.target.parentElement.querySelector(.assessment)
+        
+      })
+      
         assessmentElement.addEventListener("click", () => {
           console.log('Firing!')
           app.innerHTML = AssessmentPage();
@@ -333,7 +338,7 @@ function slideShow() {
         homeElement.addEventListener("click", () => {
           app.innerHTML = HomePage();
           slideShow();
-          assessment();
+          assessmentButton();
         });
       }
       
