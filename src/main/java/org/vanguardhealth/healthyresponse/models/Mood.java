@@ -20,6 +20,9 @@ public class Mood {
     @ManyToMany(fetch = FetchType.LAZY)
     private Collection<Trigger> trigger;
 
+    @ManyToMany
+    private Collection<Activity> activity;
+
     @OneToMany(mappedBy = "mood")
     @JsonIgnore
     private Collection<User> users;
@@ -32,7 +35,9 @@ public class Mood {
         return users;
     }
 
-
+    public Collection<Activity> getActivity() {
+        return activity;
+    }
 
     public Collection<Trigger> getTrigger() {
         return trigger;
