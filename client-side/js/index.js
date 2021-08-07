@@ -49,6 +49,7 @@ function buildPage() {
   navUserProfile();
   assessment();
   loginDraft();
+  assessmentButton();
 }
 
 function header() {
@@ -174,7 +175,6 @@ function loginDraft() {
   homeElement.addEventListener("click", () => {
     app.innerHTML = HomePage();
     slideShow();
-    assessment();
     getAffirmationApi(affirmation_api_url);
   });
 }
@@ -322,11 +322,7 @@ function slideShow() {
       }
       
       function assessmentButton() {
-        app.addEventListener("click", () => {
-        const assessmentElement = event.target.parentElement.querySelector(.assessment)
-        
-      })
-      
+        const assessmentElement = document.querySelector(".assessmentButton");
         assessmentElement.addEventListener("click", () => {
           console.log('Firing!')
           app.innerHTML = AssessmentPage();
