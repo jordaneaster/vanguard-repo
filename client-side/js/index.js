@@ -219,6 +219,7 @@ function reviews() {
   const reviewElement = document.querySelector(".nav__list_reviews");
   reviewElement.addEventListener("click", () => {
     app.innerHTML = ReviewsPage();
+    slideShow();
   });
 }
 
@@ -281,7 +282,6 @@ function slideShow() {
         const homeElement = document.querySelector(".nav__list_home");
         homeElement.addEventListener("click", () => {
           app.innerHTML = HomePage();
-          slideShow();
           assessment();
         });
       }

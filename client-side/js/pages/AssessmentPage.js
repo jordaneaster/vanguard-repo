@@ -18,7 +18,7 @@ export default function AssessmentPage() {
       <select name="cbtTrigger" id="assessTrigger" class="intake">
         <option value="userTrigger" class="cbt">Beause of...</option>
         <option value="userTrigger" class="cbt">Financial Issues</option>
-        <option value="userTrigger" class="cbt">Realtionship Issues</option>
+        <option value="userTrigger" class="cbt">Relationship Issues</option>
         <option value="userTrigger" class="cbt">Occupational Stress</option>
         <option value="userTrigger" class="cbt">Parental Stress</option>
         <option value="userTrigger" class="cbt">Gun Violence</option>

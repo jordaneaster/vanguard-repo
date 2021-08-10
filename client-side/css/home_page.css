@@ -1,63 +1,31 @@
 body {
-    background-color: rgb(212, 209, 209);
+    background-color: rgb(255, 253, 253);
 }
-.slideShowGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "SS1 SS2 SS3";
-    margin: 25px;
-    width: 100%;
-    }
-    .SS1 { 
-    border: double;    
-    grid-area: SS1; 
-    height: 450px;
-    width: 32%;
-    }
-    .SS2 { 
-    border: double;
-    grid-area: SS2; 
-    height: 450px;
-    width: 32%;
-    }
-    
-    .SS3 { 
-    border: double;
-    grid-area: SS3; 
-    height: 450px;
-    width: 32%;
-    }
-    
-    [data-component="slideshow"] .slideShowGrid {
-        display: none;
-    }
-    
-    [data-component="slideshow"] .active {
-        display: block;
-    }
+.topImg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1521075486433-bf4052bb37bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=942&q=80);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 50vh;
+    margin: 5px;
+
+}
     .inspoQuote {
        align-items: center;
     }
-    .quote {
-        height: 500px;
-        margin-left: 30%;
-        margin-top: -120px;
-        width: 700px;
-    }
+
     .testGrid {
         align-items: center;
         display: grid;
-        height: 500px;
+        height: 300px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         grid-auto-flow: row;
         grid-template-areas:
           "T1 T2";
           margin-left: 20%;
-          margin-top: -140px;
+          margin-top: 400px;
           padding: 15px;
           text-align: center;
           width: 61%;
@@ -65,33 +33,34 @@ body {
         .T1 {
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);   
             grid-area: T1;
-            height: 400px;
+            height: 300px;
         }
         .T2 {
             grid-area: T2;
-            height: 400px;
+            height: 300px;
             vertical-align: middle;
         }
        
         .down {
-           margin-top: 130px; 
+           margin-top: 30px; 
            padding: 15px;
         }
         .testButton {
             background-color: rgb(27, 150, 150);
-            border-radius: 15%;
-            font-size: larger;
-            height: 30px;
+            font-size: medium;
+            height: 28px;
+            padding: 7px;
         }
         .boxText {
             font-weight: bold;
-            font-size: larger;
+            font-size: medium;
         }
     .text {
-        color: wheat;
-        font-size: large;
-        height: 150px;
+        color: rgb(32, 32, 31);
+        font-size: medium;
+        height: 100px;
         margin-top: 15px;
+        padding: 20px;
         text-align: center;
         width: 100%;
 
@@ -99,120 +68,63 @@ body {
     .articleGrid {
         align-items: center;
         display: grid;
-        height: 500px;
+        height: 300px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         grid-auto-flow: row;
         grid-template-areas:
           "A1 A2";
           margin-left: 20%;
-          margin-top: -100px;
+          margin-top: -60px;
           width: 61%;
           text-align: center;
     }
     .A1 {
         grid-area: A1;
-        height: 400px;
+        height: 300px;
     }
     .A2 {
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);   
         grid-area: A2;
-        height: 400px;
+        height: 300px;
     }
     .articleButton {
         background-color: rgb(27, 150, 150);
-        font-size: larger;
-        height: 30px;
-        border-radius: 15%;
+        font-size: medium;
+        height: 28px;
+        padding: 7px;
+        
     }
     .memberGrid {
         align-items: center;
         display: grid;
-        height: 500px;
+        height: 300px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         grid-auto-flow: row;
         grid-template-areas:
           "M1 M2";
           margin-left: 20%;
-          margin-top: -100px;
+          margin-top: -50px;
           text-align: center;
           width: 61%;
     }
     .M1 {
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);   
         grid-area: M1;
-        height: 400px;
+        height: 300px;
     }
     .M2 {
         grid-area: M2;
-        height: 400px;
+        height: 300px;
     }
     .memberButton {
         background-color: rgb(27, 150, 150);
-        font-size: larger;
-        height: 30px;
-        border-radius: 15%;
+        font-size: medium;
+        height: 28px;
+        padding: 7px;
     }
-    .reviewBlurb {
-        align-items: center;
-    }
-    .reviewImage {
-        align-items: center;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/review-1.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border: double;
-        height: 60vh;
-        margin-right: -40px;
-        position: relative;
-        }
-        .reviewText {
-        color: white;
-        font-size: 20px;
-        left: 50%;
-        position: absolute;
-        text-align: center;
-        top: 20%;
-        transform: translate(-50%, -50%);
-        }
-        #reviewQuote {
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        border: 10px solid #515151;
-        background: #2F4F4F;
-        justify-content: center;
-        left: 38.5%;
-        margin: auto 5rem;
-        overflow: hidden;
-        padding: 1rem;
-        position: absolute;
-        text-align: center;
-        top: 40%;
-        }
-        .review-quote {
-        align-self: center;
-        color: #DCDCDC;
-        margin: 15px;
-        font: 1rem/1.2 Georgia, serif;
-        }
-        button {
-        background: #808080;
-        text-align: center;
-        font-size: 12px;
-        }
-        .review-blurb {
-        background-position: center;
-        padding-top: 50px;
-        }
-        blockquote {
-        margin: 1em;
-        }
-        figcaption {
-        align-self: center;
-        margin: 1em;
-        }  
-        @media only screen and (max-width: 961px) {
+    @media only screen and (max-width: 961px) {
             body { display: flex;
               flex-direction: column;
             }

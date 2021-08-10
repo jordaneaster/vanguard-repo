@@ -1,4 +1,4 @@
-import '../../css/login.css'
+
 import LoginLogo from '../../images/hr-logo-login.png'
 
 export default function LoginDraft() {
@@ -6,7 +6,6 @@ export default function LoginDraft() {
     <div class="container">
      <img class="loginLogo" src="${LoginLogo}" alt="healthy response logo"/>
      <form class="loginFields">
-     <div> 
      <div class="userNameLogin">
      <input type="text" id="userNameLogin" name="username" placeholder="USERNAME">
      </div>
@@ -18,7 +17,6 @@ export default function LoginDraft() {
       </div>
       <p class="loginTOS">TERMS OF SERVICE</p>
       </div> 
-
   </form>
     </div>  
   

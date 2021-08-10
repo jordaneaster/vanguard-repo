@@ -1,0 +1,101 @@
+.slideShowGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "SS1 SS2 SS3";
+    margin: 25px;
+    width: 100%;
+    }
+    .SS1 { 
+    border: double;    
+    grid-area: SS1; 
+    height: 250px;
+    width: 32%;
+    }
+    .SS2 { 
+    border: double;
+    grid-area: SS2; 
+    height: 250px;
+    width: 32%;
+    }
+    
+    .SS3 { 
+    border: double;
+    grid-area: SS3; 
+    height: 250px;
+    width: 32%;
+    }
+    
+    [data-component="slideshow"] .slideShowGrid {
+        display: none;
+    }
+    
+    [data-component="slideshow"] .active {
+        display: block;
+    }
+    .reviewBlurb {
+        align-items: center;
+    }
+    .reviewBox {
+        background-color: rgb(70, 66, 66);
+        height: 300px;
+    }
+    .reviewGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "R1 R2 R3";
+        margin: 25px;
+        width: 100%;
+        }
+        .R1 {  
+            grid-area: R1;
+            height: 200px;
+            vertical-align: middle;
+        }
+        .R2 {
+            grid-area: R2;
+            height: 200px;
+            vertical-align: middle;
+        }
+        .R3 {
+            grid-area: R3;
+            height: 200px;
+            vertical-align: middle;
+        }
+        .end {
+            margin-top: 0px;
+        }
+        .reviewText {
+        color: rgb(24, 21, 21);
+        font-size: 30px;
+        margin-top: -150px;
+        }
+    .homeReview {
+        color: rgb(10, 10, 10);
+        font-weight: bold;
+        }
+  .quote {
+      height: 70px;
+      margin-left: -20px;
+      margin-top: 100px;    }
+        button {
+        background: #080808;
+        text-align: center;
+        font-size: 12px;
+        }
+        .review-blurb {
+        background-position: center;
+        padding-top: 50px;
+        }
+        blockquote {
+        margin: 1em;
+        }
+        figcaption {
+        align-self: center;
+        margin: 1em;
+        }  
