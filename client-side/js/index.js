@@ -88,7 +88,7 @@ function renderUserLogin() {
           userName: userName,
           password: password,
         },
-        (app.innerHTML = HomePage()),
+        (app.innerHTML = HomePage(), assessment()),
         (users) => (app.innerHTML = userWelcome(users))
       );
     }
