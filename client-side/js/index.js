@@ -57,7 +57,6 @@ function buildPage() {
   activities();
   messageBoard();
 }
-console.log();
 
 function navUserProfile() {
   const profilePage = document.querySelector(".nav__list_profile");
@@ -108,13 +107,10 @@ function populateAssessmentMenu() {
     ) {
       const mood =
         event.target.parentElement.querySelector(".intakeMood").value;
-      console.log(mood);
       const trigger =
         event.target.parentElement.querySelector(".intakeTrigger").value;
-      console.log(trigger);
       const copingMechanism =
         event.target.parentElement.querySelector(".intakeCoping").value;
-      console.log(copingMechanism);
       apiActions.postRequest(
         "http://localhost:8080/send_response",
         {
@@ -182,7 +178,6 @@ function outbox() {
           title: title,
           content: content,
         },
-        console.log(subject, title, content),
 
         alert("Message Sent!"),
         (app.innerHTML = InboxPage()),
@@ -343,7 +338,6 @@ function assessment() {
 function assessment() {
   const assessmentElement = document.querySelector(".assessmentButton");
   assessmentElement.addEventListener("click", () => {
-    console.log("Firing!");
     app.innerHTML = AssessmentPage();
     populateAssessmentMenu();
   });
