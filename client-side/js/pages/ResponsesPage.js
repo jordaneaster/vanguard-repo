@@ -1,24 +1,18 @@
 export default function ResponsesPage(responses) {
   return `
-    <h1>Responses page</h1>
-    <div class='responses-constructor'>
-    ${responses.trigger.map(trigger => {
+  <div class="userClass">
+  ${responses
+    .map((response) => {
       return `
-      <p class='responses-constructor__trigger-name'>Trigger Name: ${trigger.name}
-      <input type='hidden' id='triggerId' value='${trigger.id}'>
-      </p>
-      <p class='responses-constructor__trigger-description'> Trigger Description: ${trigger.description}</p>
-  ${responses.copingMechanism.map(coping => {
-      return `
-      <p class='responses-constructor__coping-Mechanism-title'>Coping Mechanism Title: ${coping.title}
-      <input type='hidden' id='copingId' value='${coping.id}'>
-      </p>
-      <p class='responses-constructor__copingMechanism-description'>Coping Mechanism Description: ${coping.description}
-    </p>
-      `
-  }).join('')}
-  `
-  }).join('')}
-  </div>
-    `;
+    <div class="user_response">
+    <p class="mood_response">We hear you! You feel ${response.mood.mood},</p>
+    <input type='hidden' id='moodId' value='${response.mood.id}'>
+    <p class="trigger_response"> because of ${response.trigger.name},</p>
+    <input type='hidden' id='triggerId' value='${response.trigger.id}'>
+    <p class="copingMechanism_response">which causes you to ${response.copingMechanism.title}.</p>
+    <input type='hidden' id='copingMechanismId' value='${response.copingMechanism.id}'>
+      `;
+    })
+    .join("")}
+  `;
 }

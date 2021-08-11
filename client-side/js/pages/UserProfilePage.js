@@ -1,4 +1,3 @@
-
 export default function userWelcome(users) {
   console.log(users);
   return `
@@ -12,5 +11,6 @@ export default function userWelcome(users) {
         `;
       })
       .join("")}
+      </div>
     `;
 }

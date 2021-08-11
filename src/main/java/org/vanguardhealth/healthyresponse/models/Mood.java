@@ -42,10 +42,10 @@ public class Mood {
         return mood;
     }
 
-    public Mood(String mood, Trigger... trigger){
-        this.mood = mood;
-        this.trigger = Arrays.asList(trigger);
-    }
+//    public Mood(String mood, Trigger... trigger){
+//        this.mood = mood;
+//        this.trigger = Arrays.asList(trigger);
+//    }
     public Mood(String mood){
         this.mood = mood;
     }

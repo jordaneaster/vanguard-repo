@@ -1,8 +1,6 @@
-import "../../css/aboutUS.css"
-
 export default function about() {
   return `
-  <div class="container">
+  <div class="aboutUsContainer">
     <div class="header">
     <h1 class = "aboutTitle">Vanguard Health Solutions</h1>
     <p class = "valueProp">Vanguard Health Solutions was formed in 2021 to assist individuals with making positive life choices daily. <br> Healthly Response assistant is a fully customizable app designed to help you navigate your life's most challenging circumstances. <br> We want to be your go to resource when you're uncertain what to do next.  </p>
@@ -73,12 +71,9 @@ export default function about() {
     <img src="https://i.ibb.co/C9JKdFm/Zachary-Tabler.jpg" alt="Zachary Tabler Image">
     <h3>Zachary Tabler</h3>
     <a href = "mailto: zachary.tabler@gmail.com">zachary.tabler@gmail.com</a>
-    <p> My name is Zachary Tabler and I am a current Java boot camp
-    student at We Can Code It in Columbus, Ohio. I am optimistic my time at We Can Code will allow me to make a career transition into software development. Prior to We Can Code It, I spent the
-    last 15 years as a sales agent, and sales executive for two of the
-    largest personal lines insurance companies in the United States.
-    I've had a lot of success in insurance, but I am now ready to
-    pursue new endeavors.</p>
+    <p> Innovative software developer with strong communication skills across multiple industries. 
+    Bringing 15 years of experience exceeding clients’ needs and achieving business results.  
+    Excited to join an organization and develop great software.</p>
     <div class="btn">
     <a href="https://www.linkedin.com/in/zacharytabler"target="_blank">LinkedIn</a>
     </div>

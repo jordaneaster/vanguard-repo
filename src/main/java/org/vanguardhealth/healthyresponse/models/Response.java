@@ -54,6 +54,14 @@ public class Response {
 
 
     public Response(){}
+    public Response(Mood mood){
+        this.mood = mood;
+    }
+    public Response(Mood mood, Trigger trigger, CopingMechanism copingMechanism){
+        this.mood = mood;
+        this.trigger = trigger;
+        this.copingMechanism = copingMechanism;
+    }
     public Response(Trigger trigger, CopingMechanism copingMechanism,
                     Consequence consequence, Result result, Alternatives alternatives){
         this.alternatives = alternatives;

@@ -53,16 +53,14 @@ return foundUser.getCopingMechanism();
         JSONObject newUser = new JSONObject(body);
         String userName = newUser.getString("userName");
         String password = newUser.getString("password");
-        int age = newUser.getInt("age");
-        String mood = newUser.getString("mood");
-        Mood moodSelected = moodRepo.findByMood(mood);
+
 //        Mood mood = (Mood) newUser.get("mood");
 //        Trigger trigger = (Trigger) newUser.get("trigger");
 //        CopingMechanism copingMechanism = (CopingMechanism) newUser.get("copingMechanism");
         Optional<User> optionalUser = userRepo.findByUserName(userName);
 
         if(optionalUser.isEmpty()){
-            User userToAdd = new User(userName,password,age,moodSelected);
+            User userToAdd = new User(userName,password);
             userRepo.save(userToAdd);
         }
         return userRepo.findAll();

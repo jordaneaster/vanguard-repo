@@ -1,2 +1,2 @@
-POST http://localhost:8080/create_user_profile
+POST http://localhost:8080/send_response
 ###

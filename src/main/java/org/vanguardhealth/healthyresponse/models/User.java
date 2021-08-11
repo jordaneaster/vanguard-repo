@@ -3,6 +3,7 @@ package org.vanguardhealth.healthyresponse.models;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import java.util.Collection;
 import java.util.Objects;
 
 @Entity
@@ -15,7 +16,7 @@ public class User {
 
     private String userName;
     private String password;
-    private int age;
+    private String role;
     @ManyToOne
     private Mood mood;
 
@@ -25,19 +26,8 @@ public class User {
     @ManyToOne
     private CopingMechanism copingMechanism;
 
-    public User(String userName, String password, int age, Mood mood) {
-        this.userName = userName;
-        this.password = password;
-        this.age = age;
-        this.mood = mood;
-    }
-
-    public User(String userName, String password, int age) {
-        this.userName=userName;
-        this.password=password;
-        this.age=age;
-    }
-
+    @OneToMany(mappedBy="user")
+    private Collection<Activity> activities;
 
     public Long getId() {
         return id;
@@ -51,10 +41,9 @@ public class User {
         return password;
     }
 
-    public int getAge() {
-        return age;
+    public String getRole() {
+        return role;
     }
-
 
     public Mood getMood() {
         return  mood;
@@ -67,18 +56,19 @@ public class User {
         return copingMechanism;
     }
 
-    public User(){}
-    public User(String userName){
-        this.userName = userName;
+    public Collection<Activity> getActivities() {
+        return activities;
     }
-    public User(String userName, String password, int age, Mood mood,
-                CopingMechanism copingMechanism, Trigger trigger){
+
+    public User(){}
+    public User(String userName,String password){
         this.userName = userName;
         this.password = password;
-        this.age = age;
-        this.mood = mood;
-        this.trigger = trigger;
-        this.copingMechanism =  copingMechanism;
+    }
+    public User(String userName, String password, String role) {
+        this.userName=userName;
+        this.password=password;
+        this.role = role;
     }
 
     @Override

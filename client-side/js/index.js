@@ -19,12 +19,19 @@ import ContactUsPage from "./pages/ContactUsPage";
 import LegalPage from "./pages/LegalPage";
 import InspirationalQuote from "./components/InspirationalQuote";
 import LoginPage from "./pages/LoginPage";
-
+import LoginDraft from "./pages/LoginPage";
+import ActivitiesPage from "./pages/ActivitiesPage";
+import Outbox from "./pages/Outbox";
+import "../css/header_footer.css";
+import "../css/aboutUS.css";
+import "../css/form.css";
+import "../css/style.css";
+import "../css/home_page.css";
+import "../css/login.css";
+import InboxPage from "./pages/InboxPage";
+import MessageBoard from "./pages/MessageBoard";
 
 const app = document.querySelector("#app");
-const affirmation_api_url = "https://type.fit/api/quotes";
-// const affirmation_api_url ="https://zenquotes.io/api/quotes/";
-// const affirmation_api_url = 'https://zenquotes.io/api/today/';
 
 buildPage();
 
@@ -47,23 +54,20 @@ function buildPage() {
   appointment();
   legal();
   loginDraft();
-  assessment();
-  
-
+  activities();
+  messageBoard();
 }
+console.log();
 
 function navUserProfile() {
   const profilePage = document.querySelector(".nav__list_profile");
   profilePage.addEventListener("click", () => {
-    console.log('firing!');
     const app = document.querySelector("#app");
     apiActions.getRequest("http://localhost:8080/users", (user) => {
       app.innerHTML = userWelcome(user);
     });
   });
 }
-
-
 
 function header() {
   const headerElement = document.querySelector(".header");
@@ -75,30 +79,62 @@ function footer() {
 }
 
 function renderUserLogin() {
-  app.innerHTML = LoginPage();
+  app.innerHTML = LoginDraft();
   app.addEventListener("click", (event) => {
-    console.log("firing");
-    if (event.target.classList.contains("create_user")) {
+    if (event.target.classList.contains("loginButton")) {
       const userName =
         event.target.parentElement.querySelector(".userName").value;
       const password =
         event.target.parentElement.querySelector(".password").value;
-      const age = event.target.parentElement.querySelector(".age").value;
-      const mood = event.target.parentElement.querySelector(".intake").value;
-      console.log(mood);
-      console.log(event.target);
       apiActions.postRequest(
         "http://localhost:8080/create_user_profile",
         {
           userName: userName,
           password: password,
-          age: age,
         },
+        (app.innerHTML = HomePage()),
+        assessment(),
         (users) => (app.innerHTML = userWelcome(users))
       );
-      apiActions.getRequest("http://localhost:8080:/users", (user) => {
-        app.innerHTML = userInfo(user);
-      });
+    }
+  });
+}
+function populateAssessmentMenu() {
+  app.innerHTML = AssessmentPage();
+  const assessmentButton = document.querySelector(".assessBtn");
+  assessmentButton.addEventListener("click", (event) => {
+    if (
+      event.target.parentElement.parentElement.querySelector(".assessmentMenu")
+    ) {
+      const mood =
+        event.target.parentElement.querySelector(".intakeMood").value;
+      console.log(mood);
+      const trigger =
+        event.target.parentElement.querySelector(".intakeTrigger").value;
+      console.log(trigger);
+      const copingMechanism =
+        event.target.parentElement.querySelector(".intakeCoping").value;
+      console.log(copingMechanism);
+      apiActions.postRequest(
+        "http://localhost:8080/send_response",
+        {
+          mood: mood,
+          trigger: trigger,
+          copingMechanism: copingMechanism,
+        },
+        function myFunction() {
+          var r = confirm("Would you like to leave a message for an Admin?");
+          if (r == true) {
+            app.innerHTML = Outbox();
+            outbox();
+          } else {
+            apiActions.getRequest("http://localhost:8080/users", (user) => {
+              app.innerHTML = userWelcome(user);
+            });
+          }
+        },
+        (responses) => (app.innerHTML = ResponsesPage(responses))
+      );
     }
   });
 }
@@ -115,37 +151,75 @@ function renderUser() {
   });
 }
 
-
-
 function loginDraft() {
   const homeElement = document.querySelector(".loginButton");
   homeElement.addEventListener("click", () => {
     app.innerHTML = HomePage();
-    slideShow();
-    assessment();
-    getAffirmationApi(affirmation_api_url);
   });
 }
-
 
 function moods() {
   const moodElement = document.querySelector(".nav__list_moods");
   moodElement.addEventListener("click", () => {
-    console.log("firing!");
     apiActions.getRequest("http://localhost:8080/moods", (moods) => {
-      console.log(moods);
       app.innerHTML = MoodsPage(moods);
     });
   });
 }
 
+function outbox() {
+  app.addEventListener("click", (event) => {
+    if (event.target.classList.contains("sendMessage")) {
+      const subject =
+        event.target.parentElement.querySelector("#subject").value;
+      const title = event.target.parentElement.querySelector("#title").value;
+      const content =
+        event.target.parentElement.querySelector("#content").value;
+      apiActions.postRequest(
+        "http://localhost:8080/post_message",
+        {
+          subject: subject,
+          title: title,
+          content: content,
+        },
+        console.log(subject, title, content),
 
+        alert("Message Sent!"),
+        (app.innerHTML = InboxPage()),
+        (messages) => (app.innerHTML = MessageBoard(messages))
+      );
+    }
+  });
+}
+
+function replyPost(){
+  app.addEventListener('click',(event)=>{
+    if(event.target.classList.contains("replyButton")){
+      const content = event.target.parentElement.querySelector('.replycontent').value;
+    }
+  })
+}
+
+
+function messageBoard() {
+  const messageBoard = document.querySelector(".nav__list_messageBoard");
+  messageBoard.addEventListener("click", () => {
+    apiActions.getRequest("http://localhost:8080/view_messages", (messages) => {
+      app.innerHTML = MessageBoard(messages);
+    });
+  });
+}
+
+function myInbox(){
+  const myMessages = document.querySelector('.nav__list_message');
+  myMessages.addEventListener("click",()=>{
+    apiActions.getRequest
+  })
+}
 function triggers() {
   const triggerElement = document.querySelector(".nav__list_triggers");
   triggerElement.addEventListener("click", () => {
-    console.log("firing!");
     apiActions.getRequest("http://localhost:8080/triggers", (triggers) => {
-      console.log(triggers);
       app.innerHTML = TriggersPage(triggers);
     });
   });
@@ -154,26 +228,21 @@ function triggers() {
 function copingMechanisms() {
   const copingElement = document.querySelector(".nav__list_coping_mechanisms");
   copingElement.addEventListener("click", () => {
-    console.log("firing!");
     apiActions.getRequest(
       "http://localhost:8080/coping",
       (copingMechanisms) => {
-        console.log(copingMechanisms);
         app.innerHTML = CopingMechanismsPage(copingMechanisms);
       }
     );
   });
 }
 
-
 function consequences() {
   const consequencesElement = document.querySelector(".nav__list_consequences");
   consequencesElement.addEventListener("click", () => {
-    console.log("firing!");
     apiActions.getRequest(
       "http://localhost:8080/consequences",
       (consequences) => {
-        console.log(consequences);
         app.innerHTML = ConsequencesPage(consequences);
       }
     );
@@ -183,9 +252,7 @@ function consequences() {
 function results() {
   const resultsElement = document.querySelector(".nav__list_results");
   resultsElement.addEventListener("click", () => {
-    console.log("firing!");
     apiActions.getRequest("http://localhost:8080/results", (results) => {
-      console.log(results);
       app.innerHTML = ResultsPage(results);
     });
   });
@@ -197,7 +264,6 @@ function alternatives() {
     apiActions.getRequest(
       "http://localhost:8080/alternatives",
       (alternatives) => {
-        console.log(alternatives);
         app.innerHTML = AlternativesPage(alternatives);
       }
     );
@@ -207,9 +273,7 @@ function alternatives() {
 function responses() {
   const responseElement = document.querySelector(".nav__list_responses");
   responseElement.addEventListener("click", () => {
-    console.log("firing!");
     apiActions.getRequest("http://localhost:8080/responses", (responses) => {
-      console.log(responses);
       app.innerHTML = ResponsesPage(responses);
     });
   });
@@ -233,7 +297,6 @@ function about() {
 function contact() {
   const contactElement = document.querySelector(".footer_list_contactUs");
   contactElement.addEventListener("click", () => {
-    const app = document.querySelector("#app");
     app.innerHTML = ContactUsPage();
   });
 }
@@ -241,10 +304,9 @@ function contact() {
 function appointment() {
   const appointmentElement = document.querySelector(".nav__list_appointment");
   appointmentElement.addEventListener("click", () => {
-    console.log('firing!');
-      app.innerHTML = AppointmentPage();
-    });
-  }
+    app.innerHTML = AppointmentPage();
+  });
+}
 
 function legal() {
   const legalElement = document.querySelector(".footer_list_legal");
@@ -252,55 +314,79 @@ function legal() {
     app.innerHTML = LegalPage();
   });
 }
-function slideShow() {
-  const slideshows = document.querySelectorAll('.slideshow');
-  console.log(slideshows);
-  slideshows.forEach(initSlideShow);
-    }
-    function initSlideShow(slideshow) {
-      var slides = slideshow.querySelector('div').querySelectorAll('.slideShowGrid');
-      var index = 0, time = 5000;
-      slides[index].classList.add('active');  
-      setInterval( () => {
-        console.log(slides);
-      slides[index].classList.remove('active');
-      index++;
-      if (index === slides.length) index = 0; 
-      slides[index].classList.add('active');
-      }, time);
-      }
-      
-      function assessment() {
-      const assessmentElement = document.querySelector(".assessmentButton");
-        assessmentElement.addEventListener("click", () => {
-          console.log('Firing!')
-          app.innerHTML = AssessmentPage();
-        });
-      }
 
-      function home() {
-        const homeElement = document.querySelector(".nav__list_home");
-        homeElement.addEventListener("click", () => {
-          app.innerHTML = HomePage();
-          assessment();
-        });
-      }
-      
+function slideShow() {
+  const slideshows = document.querySelectorAll(".slideshow");
+  slideshows.forEach(initSlideShow);
+}
+function initSlideShow(slideshow) {
+  var slides = slideshow
+    .querySelector("div")
+    .querySelectorAll(".slideShowGrid");
+  var index = 0,
+    time = 5000;
+  slides[index].classList.add("active");
+  setInterval(() => {
+    slides[index].classList.remove("active");
+    index++;
+    if (index === slides.length) index = 0;
+    slides[index].classList.add("active");
+  }, time);
+}
+
+function assessment() {
+  const assessmentElement = document.querySelector(".assessmentButton");
+  assessmentElement.addEventListener("click", () => {
+    app.innerHTML = AssessmentPage();
+  });
+}
+
+function assessment() {
+  const assessmentElement = document.querySelector(".assessmentButton");
+  assessmentElement.addEventListener("click", () => {
+    console.log("Firing!");
+    app.innerHTML = AssessmentPage();
+    populateAssessmentMenu();
+  });
+}
+
+function home() {
+  const homeElement = document.querySelector(".nav__list_home");
+  homeElement.addEventListener("click", () => {
+    app.innerHTML = HomePage();
+    slideShow();
+    assessment();
+  });
+}
 
 function getAffirmationApi(url) {
+  const affirmation_api_url = "https://type.fit/api/quotes";
+  // const affirmation_api_url ="https://zenquotes.io/api/quotes/";
+  // const affirmation_api_url = 'https://zenquotes.io/api/today/';
   const quoteDiv = document.querySelector(".inspirational_quote__container");
-  quoteDiv.onload = (event) => {};
+  quoteDiv.onload = () => {
+    apiActions.getRequest(url, (quotes) => {
+      quoteDiv.innerHTML = InspirationalQuote(
+        quotes[Math.floor(Math.random() * quotes.length)]
+      );
 
-  apiActions.getRequest(url, (quotes) => {
-      quoteDiv.innerHTML = InspirationalQuote(quotes[Math.floor(Math.random() * quotes.length)]);
-    // quotes.forEach((quote, index) => {
-    //   quoteDiv.innerHTML = InspirationalQuote(quote);
-    // });
+      // quotes.forEach((quote, index) => {
+      //   quoteDiv.innerHTML = InspirationalQuote(quote);
+      // });
+
+      // apiActions.getRequest(url, (quote) => {
+      //     console.log(quote);
+      //     quoteDiv.innerHTML = InspirationalQuote(quote[0]);
+      // });
+    });
+  };
+}
+
+function activities() {
+  const activitiesElement = document.querySelector(".nav__list_activities");
+  activitiesElement.addEventListener("click", () => {
+    apiActions.getRequest("http://localhost:8080/activities", (activities) => {
+      app.innerHTML = ActivitiesPage(activities);
+    });
   });
-
-// apiActions.getRequest(url, (quote) => {
-//     console.log(quote);
-//     quoteDiv.innerHTML = InspirationalQuote(quote[0]);
-// });
-
 }

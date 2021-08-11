@@ -11,7 +11,8 @@ import VHSLogoBlack from '../../images/vhs-logo-black.png'
 
 export default function HomePage() {
   return `
-<div class="topImg"><div>
+  <div class="home__container">
+  <div class="topImg"><div>
         <div class="inspoQuote">
         <img class="quote" src="" alt=""/>
         </div>
@@ -45,7 +46,7 @@ export default function HomePage() {
         <div class="text bottom">
         <h2>IT GETS BETTER - YOU ARE NOT ALONE – TOGETHER WE CAN HEAL</h2>
         </div>
-        
+        </div>
 
     `;
 }

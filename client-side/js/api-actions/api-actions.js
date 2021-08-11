@@ -5,6 +5,23 @@ function getRequest(location, callback) {
     .catch((err) => console.log(err));
 }
 
+function getText(location, callback) {
+  fetch(location)
+    .then((response) => response.text())
+    .then((data) => callback(data))
+    .catch((err) => console.log(err));
+}
+
+function postText(location, requestBody, callback) {
+  fetch(location, {
+    method: "POST",
+    body: JSON.stringify(requestBody),
+  })
+    .then((response) => response.text())
+    .then((data) => callback(data))
+    .catch((err) => console.log(err));
+}
+
 function postRequest(location, requestBody, callback) {
   fetch(location, {
     method: "POST",
@@ -17,5 +34,7 @@ function postRequest(location, requestBody, callback) {
 
 export default {
   getRequest,
+  getText,
   postRequest,
+  postText,
 };

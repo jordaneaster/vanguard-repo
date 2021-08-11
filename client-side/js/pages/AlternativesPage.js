@@ -7,7 +7,7 @@ export default function AlternativesPage(alternatives) {
         <p class='alternatives-constructor__title'>Alternative Title: ${alternative.title}
           <input type='hidden' id='alternativeId' value='${alternative.id}'>
         </p>
-        <p class='alternatives-constructor__description'>Alternative Description: ${alternative.description}
+        <p class='alternatives-constructor__description'>Alternative Description: ${alternative.description}</p>
         `
     }).join('')}
     </div>
