@@ -147,6 +147,7 @@ function moods() {
   const moodElement = document.querySelector(".nav__list_moods");
   moodElement.addEventListener("click", () => {
     apiActions.getRequest("http://localhost:8080/moods", (moods) => {
+      console.log(moods);
       app.innerHTML = MoodsPage(moods);
     });
   });

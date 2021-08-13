@@ -12,9 +12,16 @@ export default function ResponsesPage(responses) {
     <span class="copingMechanism_response">which causes you to ${response.copingMechanism.title}.</span>
     <input type='hidden' id='copingMechanismId' value=${response.copingMechanism.id}>
    </div>
+   </br>
    <div>
-    <p class="closing_para">Here are a list of resources to assist you.</p>
+    <h3 class="closing_para">Here are a list of resources to assist you.</h3>
     </div>
+    </br>
+    <p><b>Resources for feeling ${response.mood.mood}</b></p>
+    </br>
+    <p><b>Resources for ${response.trigger.name}</b></p>
+    </br>
+    <p><b>Resources for ${response.copingMechanism.title}</b></p>
       `;
     })
     .join("")}
