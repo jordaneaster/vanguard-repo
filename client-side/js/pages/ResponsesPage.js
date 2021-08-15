@@ -1,5 +1,6 @@
 export default function ResponsesPage(responses) {
   return `
+  <h1>Responses from Assessment</h1>
   <div class="userClass">
   ${responses
     .map((response) => {
@@ -14,5 +15,6 @@ export default function ResponsesPage(responses) {
       `;
     })
     .join("")}
+    </div>
   `;
 }

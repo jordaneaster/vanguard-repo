@@ -6,7 +6,10 @@ export default function userWelcome(users) {
       .map((user) => {
         return `
       <div class="user_tile">
-      <p class="userName">Welcome ${user.userName} !</p>
+      <p class="userName">Welcome ${user.firstName} !</p>
+      <p class ="status">${user.status}</p>
+      <p class ="aboutMe">${user.aboutMe}</p>
+
       <input type='hidden' id='userId' value='${user.id}'>
         `;
       })
