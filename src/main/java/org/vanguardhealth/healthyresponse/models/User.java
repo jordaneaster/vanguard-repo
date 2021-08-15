@@ -1,9 +1,6 @@
 package org.vanguardhealth.healthyresponse.models;
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 42cc4d6d9be9782da10a19b8e2f9b0c7c0288ea2
 import javax.persistence.*;
 import java.util.*;
 
@@ -27,14 +24,11 @@ public class User {
     @OneToMany(mappedBy="user")
     private Collection<Activity> activities;
 
-<<<<<<< HEAD
     public void addMessage(Message messageToAdd){
         myMessages.add(messageToAdd);
     }
-=======
 
 
->>>>>>> 42cc4d6d9be9782da10a19b8e2f9b0c7c0288ea2
 
     public Long getId() {
         return id;
@@ -56,17 +50,11 @@ public class User {
     public User(String userName, String password){
         this.userName = userName;
         this.password = password;
-<<<<<<< HEAD
         this.myMessages = new HashSet<>();
-=======
 
 
->>>>>>> 42cc4d6d9be9782da10a19b8e2f9b0c7c0288ea2
     }
-//    public User(String userName, String password) {
-//        this.userName=userName;
-//        this.password=password;
-//    }
+
 
     @Override
     public boolean equals(Object o) {
@@ -82,11 +70,15 @@ public class User {
     }
 
 
-//    public void addProfile(Set<IntakeProfile> profile) {
-//        intakeProfile.add(profile);
-//    }
-//
-//    public Collection<Set<IntakeProfile>> getIntakeProfile() {
-//        return intakeProfile;
-//    }
+    public IntakeProfile getIntakeProfile() {
+        return intakeProfile;
+    }
+
+    public Set<Message> getMyMessages() {
+        return myMessages;
+    }
+
+    public void addProfile(IntakeProfile profile) {
+
+    }
 }

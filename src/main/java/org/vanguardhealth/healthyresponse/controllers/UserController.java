@@ -3,13 +3,12 @@ package org.vanguardhealth.healthyresponse.controllers;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.springframework.web.bind.annotation.*;
-<<<<<<< HEAD
 import org.vanguardhealth.healthyresponse.models.Message;
-=======
+
 import org.vanguardhealth.healthyresponse.models.CopingMechanism;
 import org.vanguardhealth.healthyresponse.models.IntakeProfile;
 import org.vanguardhealth.healthyresponse.models.Mood;
->>>>>>> 42cc4d6d9be9782da10a19b8e2f9b0c7c0288ea2
+
 import org.vanguardhealth.healthyresponse.models.User;
 import org.vanguardhealth.healthyresponse.repositories.*;
 
@@ -23,9 +22,7 @@ public class UserController {
     @Resource
     private UserRepo userRepo;
     @Resource
-<<<<<<< HEAD
     private MessageRepository messageRepo;
-=======
     private CopingMechanismRepo copingRepo;
     @Resource
     private ResultRepo resultRepo;
@@ -37,7 +34,6 @@ public class UserController {
     private MoodRepo moodRepo;
     @Resource
     private IntakeProfileRepository intakeRepo;
->>>>>>> 42cc4d6d9be9782da10a19b8e2f9b0c7c0288ea2
 
 
     @GetMapping("/users")
@@ -50,31 +46,14 @@ public class UserController {
         return userRepo.findById(id).get();
     }
 
-<<<<<<< HEAD
-=======
-    @GetMapping("users/{userId}/coping/{copingId}")
-    public CopingMechanism getUserByCoping(@PathVariable Long userId, @PathVariable Long copingId) {
-        User foundUser = userRepo.findById(userId).get();
-        Optional<CopingMechanism> copingMechanismOpt = copingRepo.findById(copingId);
-        if (copingMechanismOpt.isPresent()) {
-            foundUser.getCopingMechanism();
-        }
 
-        return foundUser.getCopingMechanism();
-    }
 
->>>>>>> 42cc4d6d9be9782da10a19b8e2f9b0c7c0288ea2
+
     @PostMapping(value = "/create_user_profile")
     public Iterable<User> createUserProfile(@RequestBody String body) throws JSONException {
         JSONObject newUser = new JSONObject(body);
         String userName = newUser.getString("userName");
         String password = newUser.getString("password");
-<<<<<<< HEAD
-=======
-//        Mood mood = (Mood) newUser.get("mood");
-//        Trigger trigger = (Trigger) newUser.get("trigger");
-//        CopingMechanism copingMechanism = (CopingMechanism) newUser.get("copingMechanism");
->>>>>>> 42cc4d6d9be9782da10a19b8e2f9b0c7c0288ea2
         Optional<User> optionalUser = userRepo.findByUserName(userName);
 
         if (optionalUser.isEmpty()) {
@@ -100,26 +79,26 @@ public class UserController {
         return userRepo.findById(id);
     }
 
-//    @PostMapping("/user/{id}/create_profile")
-//    public Optional<User> createProfile(@RequestBody String body, @PathVariable Long id) throws JSONException {
-//        JSONObject userProfile = new JSONObject(body);
-//        String firstName = userProfile.getString("firstName");
-//        String lastName = userProfile.getString("lastName");
-//        String ethnicity = userProfile.getString("ethnicity");
-//        String city = userProfile.getString("city");
-//        String state = userProfile.getString("state");
-//        String status = userProfile.getString("status");
-//        String aboutMe = userProfile.getString("aboutMe");
-//        IntakeProfile newProfile = new IntakeProfile(firstName, lastName, ethnicity,
-//                city, state, status, aboutMe);
-//        Optional<IntakeProfile> profileOptional = intakeRepo.findByLastName(lastName);
-//        if (profileOptional.isPresent()) {
-//            Optional<User> userToAddProfileToOpt = userRepo.findById(id);
-//            User userToAddProfileTo = userToAddProfileToOpt.get();
-//            userToAddProfileTo.addProfile(profileOptional.get());
-//            userRepo.save(userToAddProfileTo);
-//        }
-//
-//        return userRepo.findById(id);
-//    }
+    @PostMapping("/user/{id}/create_profile")
+    public Optional<User> createProfile(@RequestBody String body, @PathVariable Long id) throws JSONException {
+        JSONObject userProfile = new JSONObject(body);
+        String firstName = userProfile.getString("firstName");
+        String lastName = userProfile.getString("lastName");
+        String ethnicity = userProfile.getString("ethnicity");
+        String city = userProfile.getString("city");
+        String state = userProfile.getString("state");
+        String status = userProfile.getString("status");
+        String aboutMe = userProfile.getString("aboutMe");
+        IntakeProfile newProfile = new IntakeProfile(firstName, lastName, ethnicity,
+                city, state, status, aboutMe);
+        Optional<IntakeProfile> profileOptional = intakeRepo.findByLastName(lastName);
+        if (profileOptional.isPresent()) {
+            Optional<User> userToAddProfileToOpt = userRepo.findById(id);
+            User userToAddProfileTo = userToAddProfileToOpt.get();
+            userToAddProfileTo.addProfile(profileOptional.get());
+            userRepo.save(userToAddProfileTo);
+        }
+
+        return userRepo.findById(id);
+    }
 }
