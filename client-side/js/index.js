@@ -60,10 +60,26 @@ function buildPage() {
   consequences();
   results();
   alternatives();
+  toggleNav();
   assessmentHeader();
 }
 
-
+function toggleNav() {
+  const header = document.querySelector(".header");
+  header.addEventListener("click", (event) => {
+    if (
+      event.target.classList.contains("icon") ||
+      event.target.classList.contains("link")
+    ) {
+      const navItems = document.getElementById("myLinks");
+      if (navItems.style.display === "none") {
+        navItems.style.display = "block";
+      } else {
+        navItems.style.display = "none";
+      }
+    }
+  });
+}
 
 
 
@@ -123,6 +139,7 @@ function renderUserLogin() {
         consequences(),
         results(),
         alternatives(),
+        toggleNav(),
         assessmentHeader(),
         (users) => (app.innerHTML = userWelcome(users))
       );
