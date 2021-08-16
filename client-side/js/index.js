@@ -384,8 +384,22 @@ function responses() {
     apiActions.getRequest("http://localhost:8080/responses", (responses) => {
       app.innerHTML = ResponsesPage(responses);
     });
+    // renderResourcesInfo()
   });
 }
+
+// function renderResourcesInfo() {
+//   app.addEventListener('click', (event) => {
+//     if (event.target.classList.contains('mood_response')) {
+//       const resourcesId = event.target.querySelector('#moodId').value;
+//       apiActions.getRequest(`http://localhost:8080/api/resources/${moodId}`, mood => {
+//         console.log(mood);
+//         app.innerHTML = MoodResource(mood);
+//       })
+//     }
+//   })
+// }
+
 
 function reviews() {
   const reviewElement = document.querySelector(".nav__list_reviews");
