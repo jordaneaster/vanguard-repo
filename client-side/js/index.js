@@ -31,6 +31,7 @@ import "../css/login.css";
 import InboxPage from "./pages/InboxPage";
 import MessageBoard from "./pages/MessageBoard";
 import IntakeForm from "./IntakeForm";
+import MoodResourcePage from "./pages/MoodResourcePage";
 
 const app = document.querySelector("#app");
 
@@ -59,6 +60,7 @@ function buildPage() {
   messageBoard();
   myInbox();
   replyPost();
+  renderResourcesInfo();
 }
 
 function navUserProfile() {
@@ -384,21 +386,20 @@ function responses() {
     apiActions.getRequest("http://localhost:8080/responses", (responses) => {
       app.innerHTML = ResponsesPage(responses);
     });
-    // renderResourcesInfo()
   });
 }
 
-// function renderResourcesInfo() {
-//   app.addEventListener('click', (event) => {
-//     if (event.target.classList.contains('mood_response')) {
-//       const resourcesId = event.target.querySelector('#moodId').value;
-//       apiActions.getRequest(`http://localhost:8080/api/resources/${moodId}`, mood => {
-//         console.log(mood);
-//         app.innerHTML = MoodResource(mood);
-//       })
-//     }
-//   })
-// }
+function renderResourcesInfo() {
+  const moodElement = document.querySelector(".userClassContainer");
+  moodElement.addEventListener("click", () => {
+    apiActions.getRequest("http://localhost:8080/responses",
+      (mood) => {
+        console.log(mood);
+        app.innerHTML = MoodResourcePage(mood);
+      }
+    );
+  });
+}
 
 
 function reviews() {

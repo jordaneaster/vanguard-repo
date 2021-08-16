@@ -36,8 +36,7 @@ public class ResponseController {
     }
     @GetMapping("/response/{id}")
     public Response getResponse(@PathVariable Long id){
-        return responseRepo.findById(id).get();
-    }
+        return responseRepo.findById(id).get();}
 
     @PostMapping("/send_response")
     public Iterable<Response> postResponse(@RequestBody String body)throws JSONException{

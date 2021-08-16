@@ -6,8 +6,8 @@ export default function ResponsesPage(responses) {
   ${responses.map((response) => {
       return `
     <div class="user_response">
-    <span class="mood_response">We hear you! You feel ${response.mood.mood},</span>
-    <input type='hidden' id='moodId' value='${response.mood.id}'>
+    <span class="mood_response">We hear you! You feel ${response.mood.mood},
+    <input type='hidden' id='moodId' value='${response.mood.mood}'></span>
     <span class="trigger_response"> because of ${response.trigger.name},</span>
     <input type='hidden' id='triggerId' value='${response.trigger.id}'>
     <span class="copingMechanism_response">which causes you to ${response.copingMechanism.title}.</span>
@@ -16,7 +16,10 @@ export default function ResponsesPage(responses) {
     </br>
     <center><h2><center>Resources For Being ${response.mood.mood}</center></h2>
     </br>
-    <center><img src = ${response.mood.moodImage} width="300" height="300" ></center>
+    <div class="img-one">
+    <a href="link" target="blank">
+    <img class="alignnone size-full wp-image-1303" src="${response.mood.moodImage} alt="" width="850" height="1250" />
+    </a></div>
     <p class = "mood_definition"><center>${response.mood.moodDefinition}</center></p>
     </br>
     <h4>10 Minute Meditation</h4>
@@ -35,7 +38,6 @@ export default function ResponsesPage(responses) {
     </br>
     </br>
     <h2><center>${response.trigger.name} Resources</center></h2>
-    <center><img src = ${response.trigger.triggerImage} width="300" height="300" ></center>
     <p class = "mood_definition"><center>${response.trigger.description}</center></p>
     </br>
     </br>
