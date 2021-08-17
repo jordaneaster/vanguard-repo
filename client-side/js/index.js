@@ -71,10 +71,10 @@ function toggleNav() {
       event.target.classList.contains("link")
     ) {
       const navItems = document.getElementById("myLinks");
-      if (navItems.style.display === "none") {
-        navItems.style.display = "block";
-      } else {
+      if (navItems.style.visibility === "block") {
         navItems.style.display = "none";
+      } else {
+        navItems.style.display = "block";
       }
     }
   });
@@ -131,6 +131,7 @@ function renderUserLogin() {
         myInbox(),
         replyPost(),
         assessmentHeader(),
+        toggleNav(),
         reviews(),
         (users) => (app.innerHTML = userWelcome(users))
       );
