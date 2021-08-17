@@ -20,7 +20,7 @@ public class Mood {
     private String mood;
     private String moodImage;
     @Lob
-    private String moodDefinition;
+    private String moodDisclaimer;
     private String moodArticle1;
     private String moodArticle2;
     private String moodArticle3;
@@ -50,8 +50,8 @@ public class Mood {
         return moodImage;
     }
 
-    public String getMoodDefinition() {
-        return moodDefinition;
+    public String getMoodDisclaimer() {
+        return moodDisclaimer;
     }
 
     public String getMoodArticle1() {
@@ -86,10 +86,10 @@ public class Mood {
 //        this.mood = mood;
 //        this.trigger = Arrays.asList(trigger);
 //    }
-    public Mood(String mood, String moodImage, String moodDefinition, String moodArticle1, String moodArticle2, String moodArticle3, String moodPhoneResource1, String moodPhoneResource2, String moodPhoneResource3, String moodVideo){
+    public Mood(String mood, String moodImage, String moodDisclaimer, String moodArticle1, String moodArticle2, String moodArticle3, String moodPhoneResource1, String moodPhoneResource2, String moodPhoneResource3, String moodVideo){
         this.mood = mood;
         this.moodImage = moodImage;
-        this.moodDefinition = moodDefinition;
+        this.moodDisclaimer = moodDisclaimer;
         this.moodArticle1 = moodArticle1;
         this.moodArticle2 = moodArticle2;
         this.moodArticle3 = moodArticle3;

@@ -10,7 +10,7 @@ export default function LoginDraft() {
       </h1>
       <section class="login">
         <input type="text" class="userName" placeholder="Username" />
-        <input type="text" class="password" placeholder="Password" />
+        <input type="password" class="password" placeholder="Password" />
         <input type="text" class="age" placeholder="Age" />
         <button class="create_user">Continue</button>
         </section>

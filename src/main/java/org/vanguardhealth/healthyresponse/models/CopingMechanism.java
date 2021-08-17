@@ -16,7 +16,7 @@ public class CopingMechanism {
     private Long id;
     private String title;
     @Lob
-    private String description;
+    private String copingDisclaimer;
     private String copingMechanismImage;
     private String copingMechanismArticle1;
     private String copingMechanismArticle2;
@@ -40,8 +40,8 @@ public class CopingMechanism {
         return title;
     }
 
-    public String getDescription() {
-        return description;
+    public String getCopingDisclaimer() {
+        return copingDisclaimer;
     }
 
     public String getCopingMechanismImage() {
@@ -76,10 +76,10 @@ public class CopingMechanism {
         return consequences;
     }
     public CopingMechanism(){}
-    public CopingMechanism(String title,String description, String copingMechanismImage, String copingMechanismArticle1, String copingMechanismArticle2, String copingMechanismArticle3, String copingMechanismPhoneResource1,
+    public CopingMechanism(String title,String copingDisclaimer, String copingMechanismImage, String copingMechanismArticle1, String copingMechanismArticle2, String copingMechanismArticle3, String copingMechanismPhoneResource1,
                            String copingMechanismPhoneResource2, String copingMechanismPhoneResource3, Consequence...consequences){
         this.title = title;
-        this.description = description;
+        this.copingDisclaimer = copingDisclaimer;
         this.copingMechanismImage = copingMechanismImage;
         this.copingMechanismArticle1 = copingMechanismArticle1;
         this.copingMechanismArticle2 = copingMechanismArticle2;
@@ -91,7 +91,7 @@ public class CopingMechanism {
     }
     public CopingMechanism(String title,String description){
         this.title = title;
-        this.description = description;
+        this.copingDisclaimer = copingDisclaimer;
     }
 
     @Override

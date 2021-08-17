@@ -1,6 +1,5 @@
 export default function InboxPage(messages) {
   return `
-  <h1>My Messages</h1>
   <div class='myInbox'>
   ${messages.map((message) => {
     return `

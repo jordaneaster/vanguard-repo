@@ -13,7 +13,7 @@ public class Trigger {
     private Long id;
     private String name;
     @Lob
-    private String description;
+    private String triggerDisclaimer;
     private String triggerImage;
     private String triggerArticle1;
     private String triggerArticle2;
@@ -35,8 +35,8 @@ public class Trigger {
         return name;
     }
 
-    public String getDescription() {
-        return description;
+    public String getTriggerDisclaimer() {
+        return triggerDisclaimer;
     }
 
     public String getTriggerImage() {
@@ -73,9 +73,9 @@ public class Trigger {
 
     public Trigger(){}
 
-    public Trigger(String name, String description, String triggerImage, String triggerArticle1, String triggerArticle2, String triggerArticle3, String triggerPhoneResource1, String triggerPhoneResource2, String triggerPhoneResource3, CopingMechanism...copingMechanism){
+    public Trigger(String name, String triggerDisclaimer, String triggerImage, String triggerArticle1, String triggerArticle2, String triggerArticle3, String triggerPhoneResource1, String triggerPhoneResource2, String triggerPhoneResource3, CopingMechanism...copingMechanism){
         this.name = name;
-        this.description = description;
+        this.triggerDisclaimer = triggerDisclaimer;
         this.triggerImage = triggerImage;
         this.triggerArticle1 = triggerArticle1;
         this.triggerArticle2 = triggerArticle2;
@@ -85,9 +85,9 @@ public class Trigger {
         this.triggerPhoneResource3 = triggerPhoneResource3;
         this.copingMechanism = Arrays.asList(copingMechanism);
     }
-    public Trigger(String name,String description){
+    public Trigger(String name,String triggerDisclaimer){
         this.name = name;
-        this.description = description;
+        this.triggerDisclaimer = triggerDisclaimer;
     }
     @Override
     public boolean equals(Object o) {

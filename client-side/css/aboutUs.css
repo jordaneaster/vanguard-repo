@@ -1,4 +1,8 @@
 
+/* #app {
+  background-color: rgb(236, 231, 231); 
+} */
+
 .aboutTitle {
     font-size: 36px;
     text-align: center;
@@ -18,12 +22,12 @@
 }
 
 .aboutUsContainer {
-  background: #f4f4f4;
+  background-color: rgb(236, 231, 231);
+  background-repeat: repeat;
 }
 
 .aboutUsContainer {
   margin-top: 50px;
-  
 }
 
 .aboutUsContainer .team {
@@ -66,7 +70,7 @@
   text-align: center;
 }
  
-.aboutUsContainer .team .member .btn a {
+.aboutUsContainer .team .member .aboutBtn a {
   background: #ddd;
   display: block;
   float: right;
@@ -79,7 +83,7 @@
   transition: all 0.3s ease;
 }
 
-.aboutUsContainer .team .member .btn a:hover {
+.aboutUsContainer .team .member .aboutBtn a:hover {
   background: red;
   color: #fff;
 }

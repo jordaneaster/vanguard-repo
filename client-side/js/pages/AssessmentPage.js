@@ -1,7 +1,7 @@
 export default function AssessmentPage() {
   return `
         <div class="assessmentMenu">
-        <select name="cbtMood" id="assessMood" class="intakeMood">
+        <select name="cbtMood" id="assessMood" style="width: 100px;" class="intakeMood">
           <option value="userMood" class="cbt1">I feel..</option>
           <option value="Afraid" class="cbt2">Afraid</option>
           <option value="Anxious" class="cbt3">Anxious</option>
@@ -11,11 +11,10 @@ export default function AssessmentPage() {
           <option value="Hopeless" class="cbt7">Hopeless</option>
           <option value="Suicidal" class="cbt8">Suicidal</option>
           <option value="Violent" class="cbt9">Violent</option>
-          <option value="Exhausted" class="cbt9">Exhausted</option>        
+          <option value="Exhausted" class="cbt9">Exhausted</option>
         </select>
-
-      <select name="cbtTrigger" id="assessTrigger" class="intakeTrigger">
-        <option value="userTrigger" class="cbt10">Beause of...</option>
+      <select name="cbtTrigger" id="assessTrigger"  style="width: 200px;"class="intakeTrigger">
+        <option value="userTrigger" class="cbt10">Because of...</option>
         <option value="Financial Issues" class="cbt11">Financial Issues</option>
         <option value="Relationship Issues" class="cbt12">Relationship Issues</option>
         <option value="Occupational Stress" class="cbt13">Occupational Stress</option>
@@ -24,8 +23,7 @@ export default function AssessmentPage() {
         <option value="Domestic Violence" class="cbt16">Domestic Violence</option>
         <option value="Bullying" class="cbt17">Bullying</option>
       </select>
-
-      <select name="userCoping" id="assessCoping" class="intakeCoping">
+      <select name="userCoping" id="assessCoping" style="width: 250px;" class="intakeCoping">
         <option value="userCoping" class="cbt">
           Which makes me want to...</option>
         <option value="Abuse Drugs" class="cbt">Abuse Drugs</option>
