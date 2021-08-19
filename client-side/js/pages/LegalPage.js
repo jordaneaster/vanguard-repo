@@ -1,6 +1,7 @@
 import '../../css/legalPage.css'
 export default function LegalPage() {
   return `
+  <div class="legal__container">
   <div class="notice">
   <style>
   [data-custom-class='body'], [data-custom-class='body'] * {
@@ -54,6 +55,7 @@ word-break: break-word !important;
         font-family: Arial ;
       }
     </style>
+      </div>
       </div>
       `;
 }

@@ -1,5 +1,7 @@
+import '../../css/assessment.css'
 export default function AssessmentPage() {
   return `
+  <div class="assessment__container">
         <div class="assessmentMenu">
         <select name="cbtMood" id="assessMood" style="width: 100px;" class="intakeMood">
           <option value="userMood" class="cbt1">I feel..</option>
@@ -35,6 +37,7 @@ export default function AssessmentPage() {
         <option value="File for Divorce" class="cbt">File for Divorce</option>
       </select>
       <button class="assessBtn">Get Help</button>
+      </div>
       </div>
           `;
 }

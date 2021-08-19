@@ -1,14 +1,15 @@
-  
-* {
-  margin:0;
-  padding:0;
+  body {
+    background-color: rgb(236, 231, 231);
+    text-align: center;
 }
-
+.intake {
+  margin-top: 90px;
+}
+@media only screen and (max-width:900px) {
 body {
-  background-color: rgb(156, 156, 156);
+  text-align: center;
 }
-.login{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.intakeF {
+  width: 10px;
+}
 }

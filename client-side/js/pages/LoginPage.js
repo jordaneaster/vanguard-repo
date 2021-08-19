@@ -12,7 +12,9 @@ export default function LoginDraft() {
       <input type="text" id="userPasswordLogin" class="password" name="password" placeholder="PASSWORD">
       <input class="loginButton" type="submit" value="LOGIN"></input>
       <h3 class="loginProfile">CREATE A PROFILE</h3>
+      </br>
       <h3 class="loginGuest">CONTINUE AS GUEST</h3>
+      </br>
       <h3 class="loginTOS">TERMS OF SERVICE</h3>
       </div>
    </div>

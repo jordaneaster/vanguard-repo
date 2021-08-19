@@ -15,5 +15,6 @@ export default function Header() {
     <li class='nav__list_responses'>Responses</li>
   </ul>
 </nav>
+<div class="padding"></div>
         `;
 }
