@@ -24,6 +24,8 @@ public class Response {
     @OneToOne
     private Alternatives alternatives;
 
+
+
     public Long getId() {
         return id;
     }
@@ -57,19 +59,17 @@ public class Response {
     public Response(Mood mood){
         this.mood = mood;
     }
+
+    public Response(Mood mood, CopingMechanism copingMechanism) {
+        this.mood = mood;
+        this.copingMechanism = copingMechanism;
+    }
     public Response(Mood mood, Trigger trigger, CopingMechanism copingMechanism){
         this.mood = mood;
         this.trigger = trigger;
         this.copingMechanism = copingMechanism;
     }
-    public Response(Trigger trigger, CopingMechanism copingMechanism,
-                    Consequence consequence, Result result, Alternatives alternatives){
-        this.alternatives = alternatives;
-        this.trigger = trigger;
-        this.copingMechanism = copingMechanism;
-        this.consequence = consequence;
-        this.result = result;
-    }
+
 
     @Override
     public boolean equals(Object o) {

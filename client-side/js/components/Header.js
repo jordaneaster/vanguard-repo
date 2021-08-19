@@ -8,6 +8,7 @@ export default function Header() {
     <li class='nav__list_profile'>Profile</li>
     <li class='nav__list_assessment'>Assessment</li>
     <li class='nav__list_activities'>Activities</li>
+    <li class='nav__list_healthyResponses'>Healthy Responses</li>
     <li class='nav__list_message'>My Messages</li>
     <li class='nav__list_messageBoard'>Message Board</li>
     <li class='nav__list_appointment'>Appointment</li>

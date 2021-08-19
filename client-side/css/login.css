@@ -1,18 +1,14 @@
-.login__body {
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;    
-}
+
 .login__container {
     background-image: url("https://images.unsplash.com/photo-1610306673899-d10f9f5e7ece?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");    
     background-attachment: fixed;
     height: 1250px;
-  
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;    
 }
 .loginLogo {
     height: 680px;
-    margin-left: -20px;
-    display: block;
-    margin-left: 45%;
+    margin-left: 35%;
 }
 input[type=text] {
     width: 100%;
@@ -33,7 +29,7 @@ input[type=text] {
 .userNameLogin {
     border-radius: 15px;
     display: block;
-    margin-left: 30%;
+    margin-left: 35%;
     margin-top: -250px;
 }
 #userPasswordLogin {
@@ -60,42 +56,41 @@ input[type=submit] {
 .loginButton {
     margin: 20px;
 }
+.loginProfile {
+    margin-top: 20px;
+}
+.loginGuest {
+    margin-top: 20px;
+}
 .loginTOS {
     color: white;
     font-weight: bold;
     display: block;
-    margin-left: -80px;
     margin-top: 150px;
 }
 
-    @media only screen and (max-width:960px) {
-        .login__body {
-        display: flex;
-      flex-direction: column;
-        }
-        .login__container {
-            background-image: url("https://images.unsplash.com/photo-1610306673899-d10f9f5e7ece?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");    
-            height: 1000px;
-            width: 100%;
-          
-        }
-        .loginLogo {
-            height: 250px;
-            display: block;
-            margin-left: -10.5%;
-            margin-top: 60px;
-        }
-        .userNameLogin {
-            border-radius: 15px;
+    @media only screen and (max-width:900px) {
+    .login__container {  
+            font-family: 'Montserrat', sans-serif;
             display: flex;
-            margin-left: 12%;
-            margin-top: -100px;
-            height: 20px;
+            flex-direction: column;
+            text-align: center;
+            background-image: url("/images/login_s.jpg"); 
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;    
+        height: 1000px;  
+        }
+
+        .loginLogo {
+        height: 300px;
+        margin-left: -4%;
+        width: 370px;
         }
         input[type=text] {
             padding: 12px 20px;
             margin: 8px 0;
-            display: inline-block;
+            display: flex;
             border: 1px solid rgb(17, 17, 17);
             border-radius: 4px;
             box-sizing: border-box;
@@ -104,13 +99,34 @@ input[type=submit] {
         #userNameLogin {
             background-color: rgb(196, 181, 181); 
             padding: 10px;
-            margin-left: -30px;
-            width: 60%;  
+           margin-left: -100px;
+           margin-top: 150px;
+            width: 270px;  
         }
         #userPasswordLogin {
             background-color: rgb(196, 181, 181);
             padding: 10px;
-            margin-left: -20px;
-            width: 60%;
+            margin-left: -100px;
+            width: 270px;
+        }
+        .loginButton {
+            margin: 20px;
+            margin-left: -140px;
+        }
+        .loginProfile {
+            margin-top: 220px;
+            color: white;
+            margin-left: -160px;
+        }
+        .loginGuest {
+            margin-top: 20px;
+            color: white;
+            margin-left: -160px;
+        }
+        .loginTOS {
+            color: white;
+            font-weight: bold;
+            margin-left: -160px; 
+            margin-top: 20px;
         }
     }

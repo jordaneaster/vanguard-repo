@@ -31,6 +31,10 @@ public class Populator implements CommandLineRunner {
     private WorksheetRepo worksheetRepo;
     @Resource
     private IntakeProfileRepository profileRepo;
+    @Resource
+    private MessageRepository messageRepo;
+    @Resource
+    private ReplyRepository replyRepo;
 
     @Override
     public void run(String... args) throws Exception {
@@ -53,6 +57,13 @@ public class Populator implements CommandLineRunner {
         Mood homicidal = new Mood("Violent", "https://i.ibb.co/stzKxDz/Homicidal.jpg", "Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.\n", "<a href=https://www.verywellmind.com/what-is-anger-5120208 target=_blank>What Is Anger?</a>", "<a href=https://www.psychologytoday.com/us/tests/personality/anger-management-test-abridged target=_blank>PsychCentral: Anger Management Test</a>", "<a href=https://www.mentalhelp.net/anger/management/deciding-to-do-something/ target=_blank>Deciding To Manage Anger</a>", "<a href=tel:741741>Crisis Text Line: Text “home” to 741741</a>", "<a href=tel:800-662-4357>Substance Abuse and Mental Health Services Administration (SAMHSA) Helpline: 1-800-662-HELP (4357)</a>",
                 "<a href=tel:800-950-6264>National Alliance on Mental Illness (NAMI) Helpline: 1-800-950-NAMI (6264)</a>", "<iframe width=\"300\" height=\"300\" src=\"https://www.youtube.com/embed/wkse4PPxkk4\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>");
         Mood exhausted = new Mood("Exhausted", "https://i.ibb.co/d5NLbdW/Exhausted.jpg", "Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.\n", "<a href=https://www.verywellhealth.com/fatigue-symptoms-causes-diagnosis-and-treatment-4768481 target=_blank>What Is Fatigue?</a>", "<a href=https://psychcentral.com/quizzes/stress-test target=_blank>PsychCentral: How Stressed Are You?</a>", "<a href=https://www.mentalhelp.net/blogs/give-yourself-a-break target=_blank>Give Yourself A Break</a>", "<a href=tel:741741>Crisis Text Line: Text “home” to 741741</a>", "<a href=tel:800-662-4357>Substance Abuse and Mental Health Services Administration (SAMHSA) Helpline: 1-800-662-HELP (4357)</a>", "<a href=tel:800-950-6264>National Alliance on Mental Illness (NAMI) Helpline: 1-800-950-NAMI (6264)</a>", "<iframe width=\"300\" height=\"300\" src=\"https://www.youtube.com/embed/z6X5oEIg6Ak\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>");
+        
+        Mood happy = new Mood("Happy","","Filled with good feelings","","","","","","","");
+        Mood satisfied = new Mood("Satisfied","","Content with the present circumstances","","","","","","","");
+        Mood calm = new Mood("Calm","","At peace with oneself and surroundings","","","","","","","");
+        Mood forgiving = new Mood("Forgiving","","","","","","","","","");
+        Mood proud = new Mood("Proud","","","","","","","","","");
+        
         moodRepo.save(afraid);
         moodRepo.save(anxious);
         moodRepo.save(depressed);
@@ -62,6 +73,11 @@ public class Populator implements CommandLineRunner {
         moodRepo.save(lonely);
         moodRepo.save(sad);
         moodRepo.save(suicidal);
+        moodRepo.save(proud);
+        moodRepo.save(forgiving);
+        moodRepo.save(happy);
+        moodRepo.save(satisfied);
+        moodRepo.save(calm);
 
 
 
@@ -114,6 +130,8 @@ public class Populator implements CommandLineRunner {
         triggerRepo.save(domestic);
         triggerRepo.save(finances);
         triggerRepo.save(occupation);
+      
+       
         CopingMechanism doDrugs = new CopingMechanism("Abuse Drugs","Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.", "https://i.ibb.co/0q57ZTJ/Abuse-Drugs.jpg", "<a href=https://www.verywellmind.com/substance-use-4014640 target=_blank>Substance Use Overview</a>", "<a href=https://drugabuse.com/drug-addiction-quiz/ target=_blank>Drug Addiction Quiz</a>", "", "<a href=tel:800-662-4357>Substance Abuse and Mental Health Services Administration (SAMHSA) Helpline: 1-800-662-HELP (4357)</a>", "<a href=tel:818-773-9999>Narcotics Anonymous: (818) 773-9999</a>", "<a href=tel:800-950-6264>National Alliance on Mental Illness (NAMI) Helpline: 1-800-950-NAMI (6264)</a>");
         CopingMechanism drinkAlcohol = new CopingMechanism("Consume Alcohol","Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.", "https://i.ibb.co/ChZF8Sy/Consume-Alcohol.jpg", "<a href=https://www.verywellmind.com/alcohol-is-a-dangerous-drug-66528 target=_blank>Alcohol Is a Dangerous Drug</a>", "<a href=https://www.verywellmind.com/could-you-have-an-alcohol-abuse-problem-3894213 target=_blank>Could You Have an Alcohol Abuse Problem?</a>", "<a href=https://www.verywellmind.com/frequently-asked-questions-about-alcohol-problems-3865910 target=_blank>Frequently Asked Questions About Alcohol Problems</a>", "<a href=tel:800-662-4357>Substance Abuse and Mental Health Services Administration (SAMHSA) Helpline: 1-800-662-HELP (4357)</a>","<a href=tel:212-870-3400>Alcoholics Anonymous:(212) 870-3400</a>","<a href=tel:800-950-6264>National Alliance on Mental Illness (NAMI) Helpline: 1-800-950-NAMI (6264)</a>");
         CopingMechanism violence = new CopingMechanism("Commit Violence","Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.","https://i.ibb.co/d2fYwtZ/Commit-Violence.jpg", "<a href=https://www.mentalhelp.net/abuse/are-you-the-abuser/ target=_blank>If You Are An Abuser…</a>", "<a href=https://www.psychologistworld.com/stress/anger-test target=_blank>Anger Test</a>", "<a href=https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/anger-management/art-20045434 target=_blank>Anger management: 10 tips to tame your temper</a>", "<a href=tel:800-621=4673>Safe Horizon: 1-800-621-HOPE(4673)</a>", "<a href=tel:741741>Crisis Text Line: Text “home” to 741741</a>", "<a href=tel:800-662-4357>Substance Abuse and Mental Health Services Administration (SAMHSA) Helpline: 1-800-662-HELP (4357)</a>");
@@ -121,6 +139,17 @@ public class Populator implements CommandLineRunner {
         CopingMechanism isolate = new CopingMechanism("Isolate","Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.", "https://i.ibb.co/GsJ1NjR/Isolate.jpg", "<a href=https://www.webmd.com/mental-health/social-isolation-mental-health target=_blank>Social Isolation and Mental Health</a>", "<a href=https://psychcentral.com/quizzes/loneliness-quiz target=_blank>PsychCentral: The Loneliness Quiz</a>", "<a href=https://www.medicalnewstoday.com/articles/isolation-and-mental-health target=_blank>How does isolation affect mental health?</a>", "<a href=tel:741741>Crisis Text Line: Text “home” to 741741</a>", "<a href=tel:800-662-4357>Substance Abuse and Mental Health Services Administration (SAMHSA) Helpline: 1-800-662-HELP (4357)</a>", "<a href=tel:800-950-6264>National Alliance on Mental Illness (NAMI) Helpline: 1-800-950-NAMI (6264)</a>");
         CopingMechanism eatStarve = new CopingMechanism("Eat/Starve","Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.", "https://i.ibb.co/ZKc5Ztw/Eat-Starve.jpg", "<a href=https://www.verywellmind.com/eating-disorders-4157252 target=_blank>What Are Eating Disorders?</a>", "<a href=https://psychcentral.com/quizzes/eating-disorders-quiz target=_blank>PsychCentral: Do You Have An Eating Disorder?</a>", "<a href=https://www.verywellmind.com/difference-between-disordered-eating-and-eating-disorders-5184548 target=_blank>Difference Between Disordered Eating and Eating Disorders</a>", "<a href=tel:630-577-1330>National Association of Anorexia Nervosa and Eating Disorders Helpline:(630) 577-1330</a>", "<a href=tel:800-931-2237>National Eating Disorders Association:(800) 931-2237</a>", "<a href=tel:741741>Crisis Text Line: Text “home” to 741741</a>");
         CopingMechanism divorce = new CopingMechanism("File for Divorce","Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.", "https://i.ibb.co/TvhVNt0/Divorce.jpg", "<a href=https://psychcentral.com/lib/reduce-the-stress-of-a-divorce target=_blank>Reduce the Stress of a Divorce</a>", "<a href=https://www.verywellmind.com/post-divorce-trauma-4583824 target=_blank>Post-Divorce Trauma and PTSD</a>", "<a href=https://www.mentalhelp.net/articles/divorce/ target=_blank>Divorce – Support Resources for Coping and Moving on After Divorce</a>", "<a href=tel:741741>Crisis Text Line: Text “home” to 741741</a>", "<a href=tel:800-950-6264>National Alliance on Mental Illness (NAMI) Helpline: 1-800-950-NAMI (6264)</a>","<a href=tel:800-662-4357>Substance Abuse and Mental Health Services Administration (SAMHSA) Helpline: 1-800-662-HELP (4357)</a>");
+        CopingMechanism positiveSelfTalk = new CopingMechanism("Positive Self-Talk","Saying good things to and about yourself has proven to boost self-esteem, and drive one to live a happier healthier lifestyle!");
+        CopingMechanism reflection = new CopingMechanism("Reflection","Reflecting upon people, places, and things outside of your immediate control such as: children, grandchildren, favorite vacation memories, anniversaries, weddings etc, has the power to change ones overall stress levels, and can leave a lasting calming effect.");
+        CopingMechanism excercise = new CopingMechanism("Exercise","Physically working out is proven to reduce stressors and chemicals into the brain to promote a healthy mental state");
+        CopingMechanism friends = new CopingMechanism("Positive Friends","When going through a difficult time, a good group of friends who are willing to remain encouraging and positive are all it takes sometimes!");
+        CopingMechanism spirituality = new CopingMechanism("Engage in Spirituality","Reconnecting or leaning more on your faith in spirituality in rough times has the power to bring you back to your feet!");
+        CopingMechanism cleanOrganize = new CopingMechanism("Clean/Organize","Having a cluttered or messy environment only adds to stress! Solving this one problem by taking your angst out by cleaning and organizing your environment, will do wonders. This includes getting rid of all toxic energy and items associated with your mental health!");
+        CopingMechanism setBoundaries = new CopingMechanism("Set Boundaries","Setting boundaries to not allow the ones who cause you stress and anxiety, by simply saying no, is a major key in your mental recovery! Its alright to say no.");
+        CopingMechanism gratitudeList = new CopingMechanism("Gratitude List","Physically writing out the things we are thankful for, has proven to be really helpful to some. This method is designed to bring you face to face with the joys of your life, and give them the attention they deserve.");
+        CopingMechanism prioritizeTasks = new CopingMechanism("Prioritize Tasks","There are only 24 hours in the day, and things become stressful when we cant get all we want to get done. However, this is a fact of nature we must accept. We acept this by prioritizing important tasks, and becoming content with the fact that we are in control of our days and decisions.");
+
+      
         copingMechanismRepo.save(isolate);
         copingMechanismRepo.save(eatStarve);
         copingMechanismRepo.save(divorce);
@@ -128,6 +157,20 @@ public class Populator implements CommandLineRunner {
         copingMechanismRepo.save(violence);
         copingMechanismRepo.save(doDrugs);
         copingMechanismRepo.save(drinkAlcohol);
+        copingMechanismRepo.save(positiveSelfTalk);
+        copingMechanismRepo.save(reflection);
+        copingMechanismRepo.save(excercise);
+        copingMechanismRepo.save(friends);
+        copingMechanismRepo.save(spirituality);
+        copingMechanismRepo.save(cleanOrganize);
+        copingMechanismRepo.save(setBoundaries);
+        copingMechanismRepo.save(gratitudeList);
+        copingMechanismRepo.save(prioritizeTasks);
+
+        Message testMessage = new Message("testtitle","testsbbject","testcontent");
+        messageRepo.save(testMessage);
+        Reply testReply = new Reply ("TEST REPLY CONTENT", "TEST REPLY TITLE","TEST REPLY CONTENT");
+        replyRepo.save(testReply);
 
     }
 }

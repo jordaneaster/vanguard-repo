@@ -6,6 +6,7 @@ import javax.persistence.*;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -27,6 +28,18 @@ public class IntakeProfile {
 
     @OneToMany(mappedBy = "profile")
     private Collection<Worksheet> worksheets;
+
+    @OneToMany(mappedBy = "badge")
+    private List<Badge> badge;
+
+    public List<Badge> getBadge() {
+        return badge;
+    }
+
+    public void setBadge(List<Badge> badge) {
+        this.badge = badge;
+    }
+
 
     public Long getId() {
         return id;

@@ -11,9 +11,14 @@
 }
 .inspirational_quote__container {
     align-items: center;
+    font-size: 2vw; 
+    margin-top: 50px;
+ }
+ .up {
+     margin-top: -220px;
  }
 .home__card {
-   margin-top: 310px; 
+   margin-top: -210px; 
 }
 .home_card_img {
     transition: 0.3s;

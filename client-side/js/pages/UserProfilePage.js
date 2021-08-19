@@ -9,7 +9,7 @@ export default function userWelcome(users) {
       <p class="userName">Welcome ${user.firstName} !</p>
       <p class ="status">${user.status}</p>
       <p class ="aboutMe">${user.aboutMe}</p>
-
+      <button class="addBadge">Click for badge</button>
       <input type='hidden' id='userId' value='${user.id}'>
         `;
       })

@@ -1,17 +1,21 @@
-export default function InboxPage(messages) {
+export default function InboxPage(reply, newReply) {
   return `
   <div class='myInbox'>
-  ${messages.map((message) => {
-    return `
-      <h1>My Messages</h1>
+  ${reply
+    .map((replies) => {
+      return `
+      <h1 class="myId">Healthy Response</h1>
       <div class="inbox">
-      <p class="content">${message.subject}</p>
-      <p class="subject">${message.title}</p> 
-      <p class="subject">${message.content}</p>
+      <p class="subject">${replies.subject}</p>
+      <p class="title">${replies.title}</p> 
+      <p class="content">${replies.content}</p>
       </div>
-      `;
-  })}
-  </div>
+      `
+      ;
+    }) 
+    .join()}
   
+  </div>
     `;
 }
+
