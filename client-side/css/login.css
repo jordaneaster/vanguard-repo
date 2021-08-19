@@ -6,10 +6,12 @@
     font-family: 'Montserrat', sans-serif;
     margin-top: -100px;
     text-align: center;    
-    margin-left: -300px;
+    
 }
 .loginLogo {
     height: 680px;
+    margin-top: 100px;
+
 }
 input[type=text] {
     width: 100%;
@@ -31,6 +33,7 @@ input[type=text] {
     border-radius: 15px;
     display: block;
     margin-top: -250px;
+    margin-left: 100px;
 }
 #userPasswordLogin {
     background-color: rgb(196, 181, 181);
@@ -59,14 +62,17 @@ input[type=submit] {
 .loginProfile {
     color: white;
     margin-top: 20px;
+    margin-left: -100px;
 }
 .loginGuest {
     color: rgb(12, 10, 10);
+    margin-left: -100px;
 }
 .loginTOS {
     color: white;
     font-weight: bold;
     display: block;
+    margin-left: -100px;
 }
 
     @media only screen and (max-width:1000px) {
@@ -80,10 +86,13 @@ input[type=submit] {
         background-attachment: fixed;
         background-position: center;    
         height: 1400px;  
+        margin-left: -10px;
+        width: auto;
+        
         }
 
         .loginLogo {
-        height: 300px;
+        height: 350px;
         margin-left: -4%;
         width: 370px;
         }
@@ -99,34 +108,34 @@ input[type=submit] {
         #userNameLogin {
             background-color: rgb(196, 181, 181); 
             padding: 10px;
-           margin-left: -100px;
+           margin-left: -60px;
            margin-top: 150px;
             width: 270px;  
         }
         #userPasswordLogin {
             background-color: rgb(196, 181, 181);
             padding: 10px;
-            margin-left: -100px;
+            margin-left: -60px;
             width: 270px;
         }
         .loginButton {
             margin: 20px;
-            margin-left: -140px;
+            margin-left: -90px;
         }
         .loginProfile {
-            margin-top: 220px;
+            margin-top: 120px;
             color: white;
-            margin-left: -160px;
+            margin-left: -110px;
         }
         .loginGuest {
             margin-top: 20px;
             color: white;
-            margin-left: -160px;
+            margin-left: -110px;
         }
         .loginTOS {
             color: white;
             font-weight: bold;
-            margin-left: -160px; 
+            margin-left: -110px; 
             margin-top: 20px;
         }
     }
