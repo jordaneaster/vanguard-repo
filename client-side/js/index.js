@@ -58,25 +58,33 @@ function buildPage() {
   messageBoard();
   myInbox();
   replyPost();
-  toggleNav();
+  renderHeader();
   assessmentHeader();
   reviews();
+}
+
+function renderHeader() {
+  const header = document.querySelector(".header");
+  header.addEventListener("click", (event) => {
+    console.log(event.target);
+    const nav = document.querySelector(".navToggle");
+    if (nav.style.display === "block") {
+      nav.style.display = "none";
+    } else {
+      nav.style.display = "block";
+    }
+  });
 }
 
 function toggleNav() {
   const header = document.querySelector(".header");
   header.addEventListener("click", (event) => {
-    if (
-      event.target.classList.contains("icon") ||
-      event.target.classList.contains("link")
-    ) {
-      const navItems = document.getElementById("myLinks");
-      if (navItems.style.visibility === "block") {
+      const navItems = document.queryselector(".myLinks");
+      if (navItems.style.display === "block") {
         navItems.style.display = "none";
       } else {
         navItems.style.display = "block";
       }
-    }
   });
 }
 
@@ -131,7 +139,7 @@ function renderUserLogin() {
         myInbox(),
         replyPost(),
         assessmentHeader(),
-        toggleNav(),
+        renderHeader(),
         reviews(),
         (users) => (app.innerHTML = userWelcome(users))
       );

@@ -95,7 +95,7 @@ nav label {
 
 /* MOBILE NAVIGATION */
 
-@media (max-width: 1000px) {
+@media (max-width: 1015px) {
   nav {
     /* we want to absolute positioning the menu, checkbox and label element to its parent, so this is needed */
     position: relative;
