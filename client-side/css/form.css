@@ -4,7 +4,7 @@ form
 }
 
 
-input  text, select, textarea {
+input form  text, select, textarea {
     width: 50%; 
     padding: 12px; 
     border: 1px solid #ccc; 
