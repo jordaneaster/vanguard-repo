@@ -4,7 +4,7 @@ form
 }
 
 
-input[type=text] ,select, textarea {
+input[type=text] select, textarea {
     width: 50%; 
     padding: 12px; 
     border: 1px solid #ccc; 
@@ -14,7 +14,9 @@ input[type=text] ,select, textarea {
     margin-bottom: 16px; 
     
   }
-   
+   select{
+
+   }
   
   input form[type=submit] {
     background-color: red;
