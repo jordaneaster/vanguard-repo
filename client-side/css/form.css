@@ -5,8 +5,9 @@ form
 }
 
 
+
 input[type=text], select, textarea {
-  width: 50%;
+  width: 50px;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
