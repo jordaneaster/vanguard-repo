@@ -16,7 +16,6 @@ export default function ContactUsPage() {
           <span class="invalid" id="name-status"></span>
           <label for="email">Email</label>
           <input type="text" id="email" name="email placeholder="Your email..">
-          <span class="invalid" id="email-status"></span>
           <label for="text"> Your Thoughts </label>
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
           
