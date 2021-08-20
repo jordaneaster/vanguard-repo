@@ -4,8 +4,8 @@ form
 }
 
 
-input[type=text] ,select, textarea, placeholder {
-    width: 20%; 
+input[type=text] ,select, textarea {
+    width: 60%; 
     padding: 12px; 
     border: 1px solid #ccc; 
     border-radius: 4px; 
