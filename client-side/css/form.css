@@ -41,7 +41,9 @@ input[type=text] ,select, textarea {
   input[type=submit]:hover {
     background-color: blue;
   }
-  
+   input placeholder{
+    width: 10%; 
+   }
 
   
    .container {
