@@ -1,3 +1,14 @@
+.header_logo {
+  margin: 2px;
+  height: 75px;
+  width: 100px;
+}
+
+.footer_logo {
+  height: 200px;
+  width: 150px;
+}
+
 .nav__header li {
   border-radius: 6px;
   cursor: pointer;
@@ -7,7 +18,7 @@
 }
 
 .footer {
-  margin-top: 2em;
+  margin-top: 1em;
   margin-bottom: 1em;
   color: red;
   font-weight: bold;

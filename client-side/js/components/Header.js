@@ -3,7 +3,7 @@ import HRHeaderLogo from "../../images/hr-logo-heart.png"
 export default function Header() {
   return `
   <nav>
-  <img src="${HRHeaderLogo}">
+  <img class="header_logo" src="${HRHeaderLogo}">
   	<input type="checkbox">
 	<label>&equiv;</label>
   <ul class="nav__header">
