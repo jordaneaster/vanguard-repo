@@ -13,7 +13,9 @@ input[type=text], select, textarea {
     margin-bottom: 16px; 
     
   }
-  
+   select{
+    width: 50%;
+   }
   
   input form[type=submit] {
     background-color: red;
