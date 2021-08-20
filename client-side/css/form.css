@@ -3,7 +3,8 @@ form
     text-align: center;
 }
 label{
-  color: white
+  color: red;
+  text-align: center;
 }
 
 input[type=text] {
