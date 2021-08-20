@@ -24,10 +24,10 @@ export default function ContactUsPage() {
             <div class="star-input">
             <select class="form-control" id="rate">
             <option value="1star">1 star</option>
-            <option value="2stars">2 star</option>
-            <option value="3stars">3 star</option>
-            <option value="4stars">4 star</option>
-            <option value="5stars">5 star</option>
+            <option value="2stars">2 stars</option>
+            <option value="3stars">3 stars</option>
+            <option value="4stars">4 stars</option>
+            <option value="5stars">5 stars</option>
           </select>
 
   
