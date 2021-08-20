@@ -9,7 +9,7 @@ export default function ContactUsPage() {
 
       <form id="form1" method="post" action="javascript:alert('Submitted')">
           <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." "style="width:10px">
           <span class="invalid" id="name-status"></span>
           <label for="lname">Last Name</label>
           <input type="text" id="lname" name="lastname" placeholder="Your last name..">
