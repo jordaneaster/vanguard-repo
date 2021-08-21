@@ -1,0 +1,93 @@
+[
+    {
+      "id": 23,
+      "name": "Bullying",
+      "triggerDisclaimer": "Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.",
+      "triggerImage": "https://i.ibb.co/0yxpnS3/Bullyinhg.jpg",
+      "triggerArticle1": "<a href=https://www.stompoutbullying.org/bullying-prevention-tip-sheet target=_blank>Bullying Prevention - Tip Sheet</a>",
+      "triggerArticle2": "<a href=https://www.verywellfamily.com/how-building-selfesteem-can-prevent-bullying-460679 target=_blank>13 Ways to Build Self-Esteem and Prevent Bullying</a>",
+      "triggerArticle3": "<a href=https://www.verywellfamily.com/how-bullying-hotlines-work-4589992 target=_blank>How Do Bullying Hotlines Work?</a>",
+      "triggerPhoneResource1": "<a href=tel:866-488-7386>NoBully.org Help Hotline: 1-866-488-7386</a>",
+      "triggerPhoneResource2": "<a href=tel:741741>Crisis Text Line: Text “home” to 741741</a>",
+      "triggerPhoneResource3": "<a href=tel:844-878-2274>Cyber Civil Rights Initiative Crisis Helpline: 1-844-878-2274</a>"
+  
+    },
+    {
+      "id": 24,
+      "name": "Domestic Violence",
+      "triggerDisclaimer": "Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.",
+      "triggerImage": "https://i.ibb.co/FHPKJh8/Domestic-Violence.jpg",
+      "triggerArticle1": "<a href=https://www.verywellmind.com/different-types-of-domestic-violence-5119884 target=_blank>What Are The Types of Domestic Violence?</a>",
+      "triggerArticle2": "<a href=https://www.verywellmind.com/domestic-violence-danger-assessment-quiz-66532 target=_blank>Domestic Violence Danger Assessment Quiz</a>",
+      "triggerArticle3": "<a href=https://www.verywellmind.com/signs-that-a-relationship-could-turn-violent-4100203 target=_blank>Signs That Indicate a Relationship Could Turn Violent</a>",
+      "triggerPhoneResource1": "<a href=tel:800-799-7233>National Domestic Violence Hotline: 1-800-799-SAFE</a>",
+      "triggerPhoneResource2": "<a href=tel:567-742-8837>Take the Night Foundation Hotline: 567-742-8837</a>",
+      "triggerPhoneResource3": "<a href=tel:800-656-4673>Victim Contact Resource Center: 800-656-4673</a>"
+  
+    },
+    {
+      "id": 25,
+      "name": "Gun Violence",
+      "triggerDisclaimer": "Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.",
+      "triggerImage": "https://i.ibb.co/X7Rt5Tj/Gun-Violence.jpg",
+      "triggerArticle1": "<a href=https://www.verywellmind.com/shooting-ptsd-from-a-shooting-2797200 target=_blank>Coping With PTSD Symptoms Following a Shooting</a>",
+      "triggerArticle2": "<a href=https://www.counseling.org/knowledge-center/coping-in-the-aftermath-of-a-shooting target=_blank>Coping In The Aftermath Of A Shooting</a>",
+      "triggerArticle3": "<a href=https://www.apa.org/topics/gun-violence-crime/mass-shooting target=_blank>Managing your distress in the aftermath of a shooting</a>",
+      "triggerPhoneResource1": "<a href=tel:800-394-2255>National Center for Victims of Crime: (800) 394-2255</a>",
+      "triggerPhoneResource2": "<a href=tel:800-985-5990>Disaster Distress Helpline: (800) 985-5990</a>",
+      "triggerPhoneResource3": "<a href=tel:410-825-8888>Sidran Institute: (410)-825-8888</a>"
+    
+    },
+    {
+      "id": 26,
+      "name": "Parental Stress",
+      "triggerDisclaimer": "Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.",
+      "triggerImage": "https://i.ibb.co/wp123Rv/Parental-Stress.jpg",
+      "triggerArticle1": "<a href=https://www.psychologytoday.com/us/blog/the-race-good-health/201306/4-tips-managing-parenting-stress target=_blank>4 Tips for Managing Parenting Stress</a>",
+      "triggerArticle2": "<a href=https://health.clevelandclinic.org/ready-snap-tips-for-stressed-out-parents/ target=_blank>Ready to Snap? Tips for Stressed-Out Parents</a>",
+      "triggerArticle3": "<a href=https://parentingscience.com/parenting-stress-evidence-based-tips/ target=_blank>Parenting stress: 12 evidence-based tips for making life better</a>",
+      "triggerPhoneResource1": "<a href=tel:800-632-8188>Parental Stress Line: (800) 632-8188</a>",
+      "triggerPhoneResource2": "<a href=tel:741741>Crisis Text Line: Text “home” to 741741</a>",
+      "triggerPhoneResource3": "<a href=tel:800-932-4616>CONTACT Helpline: 1-800-932-4616</a>"
+    
+    },
+    {
+      "id": 27,
+      "name": "Relationship Issues",
+      "triggerDisclaimer": "Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.",
+      "triggerImage": "https://i.ibb.co/v4GMTdn/Relationship-Issues.jpg",
+      "triggerArticle1": "<a href=https://www.mentalhelp.net/articles/relationship-problems/ target=_blank>Relationship Problems</a>",
+      "triggerArticle2": "<a href=https://www.verywellmind.com/the-toll-of-conflict-in-relationships-3144952 target=_blank>Effects of Conflict and Stress on Relationships</a>",
+      "triggerArticle3": "<a href=https://www.verywellmind.com/all-about-healthy-relationship-4774802 target=_blank>How to Know If You Are In a Healthy Relationship</a>",
+      "triggerPhoneResource1": "<a href=tel:800-799-7233>National Domestic Violence Hotline: 1-800-799-SAFE</a>",
+      "triggerPhoneResource2": "<a href=tel:866-331-9474>Love Is Respect: 1-866-331-9474</a>",
+      "triggerPhoneResource3": ""
+    
+    },
+    {
+      "id": 28,
+      "name": "Financial Issues",
+      "triggerDisclaimer": "Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.",
+      "triggerImage": "https://i.ibb.co/r2S5ZhK/Financial-Issues.jpg",
+      "triggerArticle1": "<a href=https://www.apa.org/topics/stress/holiday-money target=_blank>Dealing with financial stress</a>",
+      "triggerArticle2": "<a href=https://www.verywellmind.com/understanding-and-preventing-financial-stress-3144546 target=_blank>Coping With Financial Stress in Your Life</a>",
+      "triggerArticle3": "<a href=https://www.verywellmind.com/how-to-handle-the-stress-of-a-financial-crisis-3144545 target=_blank>Dealing With the Stress of a Financial Crisis</a>",
+      "triggerPhoneResource1": "<a href=tel:741741>Crisis Text Line: Text “home” to 741741</a>",
+      "triggerPhoneResource2": "",
+      "triggerPhoneResource3": ""
+     
+    },
+    {
+      "id": 29,
+      "name": "Occupational Stress",
+      "triggerDisclaimer": "Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.",
+      "triggerImage": "https://i.ibb.co/LgZ8csD/Occupational-Stress.jpg",
+      "triggerArticle1": "<a href=https://www.chihealth.com/en/services/eap/stress-at-work.html target=_blank>How to Manage Stress at Work</a>",
+      "triggerArticle2": "<a href=https://www.mayoclinic.org/healthy-lifestyle/stress-management/in-depth/coping-with-stress/art-20048369 target=_blank>Coping with stress: Workplace tips</a>",
+      "triggerArticle3": "<a href=https://www.verywellmind.com/how-to-deal-with-stress-at-work-3145273 target=_blank>9 Simple Ways to Deal With Stress at Work</a>",
+      "triggerPhoneResource1": "<a href=tel:741741>Crisis Text Line: Text “home” to 741741</a>",
+      "triggerPhoneResource2": "<a href=tel:800-932-4616>CONTACT Helpline: 1-800-932-4616</a>",
+      "triggerPhoneResource3": ""
+  
+    }
+]

@@ -89,7 +89,7 @@ public class CopingMechanism {
         this.copingMechanismPhoneResource3 = copingMechanismPhoneResource3;
         this.consequences = Arrays.asList(consequences);
     }
-    public CopingMechanism(String title,String description){
+    public CopingMechanism(String title,String copingDisclaimer){
         this.title = title;
         this.copingDisclaimer = copingDisclaimer;
     }

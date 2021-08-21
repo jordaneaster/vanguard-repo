@@ -1,0 +1,12 @@
+.myId{
+   display: flex;
+   flex-direction: column; 
+   -ms-flex-align: baseline;
+}
+.messageAside{
+position:relative;
+align-items:flex-end;
+}
+.inbox{
+    
+}

@@ -1,0 +1,93 @@
+[
+    {
+      "id": 30,
+      "title": "Isolate",
+      "copingDisclaimer": "Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.",
+      "copingMechanismImage": "https://i.ibb.co/GsJ1NjR/Isolate.jpg",
+      "copingMechanismArticle1": "<a href=https://www.webmd.com/mental-health/social-isolation-mental-health target=_blank>Social Isolation and Mental Health</a>",
+      "copingMechanismArticle2": "<a href=https://psychcentral.com/quizzes/loneliness-quiz target=_blank>PsychCentral: The Loneliness Quiz</a>",
+      "copingMechanismArticle3": "<a href=https://www.medicalnewstoday.com/articles/isolation-and-mental-health target=_blank>How does isolation affect mental health?</a>",
+      "copingMechanismPhoneResource1": "<a href=tel:741741>Crisis Text Line: Text “home” to 741741</a>",
+      "copingMechanismPhoneResource2": "<a href=tel:800-662-4357>Substance Abuse and Mental Health Services Administration (SAMHSA) Helpline: 1-800-662-HELP (4357)</a>",
+      "copingMechanismPhoneResource3": "<a href=tel:800-950-6264>National Alliance on Mental Illness (NAMI) Helpline: 1-800-950-NAMI (6264)</a>"
+    
+    },
+    {
+      "id": 31,
+      "title": "Eat/Starve",
+      "copingDisclaimer": "Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.",
+      "copingMechanismImage": "https://i.ibb.co/ZKc5Ztw/Eat-Starve.jpg",
+      "copingMechanismArticle1": "<a href=https://www.verywellmind.com/eating-disorders-4157252 target=_blank>What Are Eating Disorders?</a>",
+      "copingMechanismArticle2": "<a href=https://psychcentral.com/quizzes/eating-disorders-quiz target=_blank>PsychCentral: Do You Have An Eating Disorder?</a>",
+      "copingMechanismArticle3": "<a href=https://www.verywellmind.com/difference-between-disordered-eating-and-eating-disorders-5184548 target=_blank>Difference Between Disordered Eating and Eating Disorders</a>",
+      "copingMechanismPhoneResource1": "<a href=tel:630-577-1330>National Association of Anorexia Nervosa and Eating Disorders Helpline:(630) 577-1330</a>",
+      "copingMechanismPhoneResource2": "<a href=tel:800-931-2237>National Eating Disorders Association:(800) 931-2237</a>",
+      "copingMechanismPhoneResource3": "<a href=tel:741741>Crisis Text Line: Text “home” to 741741</a>"
+     
+    },
+    {
+      "id": 32,
+      "title": "File for Divorce",
+      "copingDisclaimer": "Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.",
+      "copingMechanismImage": "https://i.ibb.co/TvhVNt0/Divorce.jpg",
+      "copingMechanismArticle1": "<a href=https://psychcentral.com/lib/reduce-the-stress-of-a-divorce target=_blank>Reduce the Stress of a Divorce</a>",
+      "copingMechanismArticle2": "<a href=https://www.verywellmind.com/post-divorce-trauma-4583824 target=_blank>Post-Divorce Trauma and PTSD</a>",
+      "copingMechanismArticle3": "<a href=https://www.mentalhelp.net/articles/divorce/ target=_blank>Divorce – Support Resources for Coping and Moving on After Divorce</a>",
+      "copingMechanismPhoneResource1": "<a href=tel:741741>Crisis Text Line: Text “home” to 741741</a>",
+      "copingMechanismPhoneResource2": "<a href=tel:800-950-6264>National Alliance on Mental Illness (NAMI) Helpline: 1-800-950-NAMI (6264)</a>",
+      "copingMechanismPhoneResource3": "<a href=tel:800-662-4357>Substance Abuse and Mental Health Services Administration (SAMHSA) Helpline: 1-800-662-HELP (4357)</a>"
+    
+    },
+    {
+      "id": 33,
+      "title": "Self-Harm",
+      "copingDisclaimer": "Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.",
+      "copingMechanismImage": "https://i.ibb.co/FzPtGHM/Self-Harm.jpg",
+      "copingMechanismArticle1": "<a href=https://www.verywellmind.com/self-injury-and-cutting-1065420 target=_blank>An Overview of Self-Injury and Cutting</a>",
+      "copingMechanismArticle2": "<a href=https://www.mentalhelp.net/suicide/6-reasons-why-people-self-injure/ target=_blank>6 Reasons Why People Self-Injure</a>",
+      "copingMechanismArticle3": "<a href=https://www.mentalhelp.net/blogs/what-to-do-in-a-mental-health-emergency/ target=_blank>What to Do In a Mental Health Emergency</a>",
+      "copingMechanismPhoneResource1": "<a href=tel:741741>Crisis Text Line: Text “home” to 741741</a>",
+      "copingMechanismPhoneResource2": "<a href=tel:800-273-8255>National Suicide Prevention Lifeline: 1-800-273-TALK (8255)</a>",
+      "copingMechanismPhoneResource3": "<a href=tel:800-784-2433>National Hopeline Network: 1-800-SUICIDE (784-2433)</a>"
+      
+    },
+    {
+      "id": 34,
+      "title": "Commit Violence",
+      "copingDisclaimer": "Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.",
+      "copingMechanismImage": "https://i.ibb.co/d2fYwtZ/Commit-Violence.jpg",
+      "copingMechanismArticle1": "<a href=https://www.mentalhelp.net/abuse/are-you-the-abuser/ target=_blank>If You Are An Abuser…</a>",
+      "copingMechanismArticle2": "<a href=https://www.psychologistworld.com/stress/anger-test target=_blank>Anger Test</a>",
+      "copingMechanismArticle3": "<a href=https://www.mayoclinic.org/healthy-lifestyle/adult-health/in-depth/anger-management/art-20045434 target=_blank>Anger management: 10 tips to tame your temper</a>",
+      "copingMechanismPhoneResource1": "<a href=tel:800-621=4673>Safe Horizon: 1-800-621-HOPE(4673)</a>",
+      "copingMechanismPhoneResource2": "<a href=tel:741741>Crisis Text Line: Text “home” to 741741</a>",
+      "copingMechanismPhoneResource3": "<a href=tel:800-662-4357>Substance Abuse and Mental Health Services Administration (SAMHSA) Helpline: 1-800-662-HELP (4357)</a>"
+     
+    },
+    {
+      "id": 35,
+      "title": "Abuse Drugs",
+      "copingDisclaimer": "Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.",
+      "copingMechanismImage": "https://i.ibb.co/0q57ZTJ/Abuse-Drugs.jpg",
+      "copingMechanismArticle1": "<a href=https://www.verywellmind.com/substance-use-4014640 target=_blank>Substance Use Overview</a>",
+      "copingMechanismArticle2": "<a href=https://drugabuse.com/drug-addiction-quiz/ target=_blank>Drug Addiction Quiz</a>",
+      "copingMechanismArticle3": "",
+      "copingMechanismPhoneResource1": "<a href=tel:800-662-4357>Substance Abuse and Mental Health Services Administration (SAMHSA) Helpline: 1-800-662-HELP (4357)</a>",
+      "copingMechanismPhoneResource2": "<a href=tel:818-773-9999>Narcotics Anonymous: (818) 773-9999</a>",
+      "copingMechanismPhoneResource3": "<a href=tel:800-950-6264>National Alliance on Mental Illness (NAMI) Helpline: 1-800-950-NAMI (6264)</a>"
+    
+    },
+    {
+      "id": 36,
+      "title": "Consume Alcohol",
+      "copingDisclaimer": "Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.",
+      "copingMechanismImage": "https://i.ibb.co/ChZF8Sy/Consume-Alcohol.jpg",
+      "copingMechanismArticle1": "<a href=https://www.verywellmind.com/alcohol-is-a-dangerous-drug-66528 target=_blank>Alcohol Is a Dangerous Drug</a>",
+      "copingMechanismArticle2": "<a href=https://www.verywellmind.com/could-you-have-an-alcohol-abuse-problem-3894213 target=_blank>Could You Have an Alcohol Abuse Problem?</a>",
+      "copingMechanismArticle3": "<a href=https://www.verywellmind.com/frequently-asked-questions-about-alcohol-problems-3865910 target=_blank>Frequently Asked Questions About Alcohol Problems</a>",
+      "copingMechanismPhoneResource1": "<a href=tel:800-662-4357>Substance Abuse and Mental Health Services Administration (SAMHSA) Helpline: 1-800-662-HELP (4357)</a>",
+      "copingMechanismPhoneResource2": "<a href=tel:212-870-3400>Alcoholics Anonymous:(212) 870-3400</a>",
+      "copingMechanismPhoneResource3": "<a href=tel:800-950-6264>National Alliance on Mental Illness (NAMI) Helpline: 1-800-950-NAMI (6264)</a>"
+    
+}
+]

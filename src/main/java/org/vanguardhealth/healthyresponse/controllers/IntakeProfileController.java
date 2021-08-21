@@ -4,6 +4,7 @@ package org.vanguardhealth.healthyresponse.controllers;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.springframework.web.bind.annotation.*;
+import org.vanguardhealth.healthyresponse.models.Badge;
 import org.vanguardhealth.healthyresponse.models.IntakeProfile;
 import org.vanguardhealth.healthyresponse.repositories.IntakeProfileRepository;
 
@@ -25,6 +26,16 @@ public class IntakeProfileController {
     public IntakeProfile getProfile(@PathVariable Long id){
         return intakeRepo.findById(id).get();
     }
+
+    @PatchMapping("intake_profile/{id}/add-badge")
+    public Optional<IntakeProfile> addBadge(@RequestBody Badge badgeToAdd, Long id) throws JSONException{
+        Optional<IntakeProfile> profileToModify = intakeRepo.findById(id);
+        badgeToAdd.addProfile(profileToModify.get());
+
+    return profileToModify;
+    }
+
+
 
     @PostMapping(value = "/create_intake_profile")
     public Iterable<IntakeProfile> createProfile(@RequestBody String body) throws JSONException{

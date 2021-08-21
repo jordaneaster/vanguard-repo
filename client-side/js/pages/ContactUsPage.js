@@ -8,19 +8,24 @@ export default function ContactUsPage() {
       <div class="column">
 
       <form id="form1" method="post" action="javascript:alert('Submitted')">
-          <label for="fname">First Name</label>
+          <label for="fname">First Name:</label>
           <input type="text" id="fname" name="firstname" placeholder="Your name..">
           <span class="invalid" id="name-status"></span>
-          <label for="lname">Last Name</label>
+          </br>
+          <label for="lname">Last Name:</label>
           <input type="text" id="lname" name="lastname" placeholder="Your last name..">
           <span class="invalid" id="name-status"></span>
-          <label for="email">Email</label>
+          </br>
+          <label for="email">Email Address:</label>
           <input type="text" id="email" name="email placeholder="Your email..">
-          <label for="text"> Your Thoughts </label>
+          <span class="invalid" id="email-status"></span>
+          </br>
+          <label for="email"> Your Thoughts: </label>
+          </br>
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
           
           <div class="star-rating" >
-          <div class="thanks-msg">Thank you for your feedback !!! Rate Us </div>
+          <div class="thanks-msg">Thank you for your feedback! Please Rate Us! </div>
             <div class="star-input">
             <select class="form-control" id="rate">
             <option value="1star">1 star</option>

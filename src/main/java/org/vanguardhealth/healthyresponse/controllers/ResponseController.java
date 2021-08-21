@@ -10,7 +10,6 @@ import org.vanguardhealth.healthyresponse.models.Trigger;
 import org.vanguardhealth.healthyresponse.repositories.*;
 
 import javax.annotation.Resource;
-import java.util.Optional;
 
 @CrossOrigin
 @RestController
@@ -54,6 +53,7 @@ public class ResponseController {
 
         return responseRepo.findAll();
     }
+
 
 
 }

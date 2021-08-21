@@ -11,17 +11,20 @@ import Appointment from "../../images/6.png";
 import Resources from "../../images/7.png";
 import MemberSpotlight from "../../images/8.png";
 import HRBlog from "../../images/9.png";
+import HRHeart from "../../images/HR-Logo-Home.png"
 
 export default function HomePage() {
   return `
   <div class="home__container">
  <img class="home__HR_logo" src="${HRLogoLong}">
         <div class="inspirational_quote__container"></div>
+        <div class="up"></div>
         <div class="home__card">
         <img class="home_card_img" id="profileCard" src="${Profile}">
         <img class="home_card_img round" id="assessment" src="${Assessment}">
         <img class="home_card_img" id="activities" src="${Activities}">
         <img class="home_card_img" id="messages" src="${Messages}">
+        <img class="home_card_img" id="responses" src="${HRHeart}">
         <img class="home_card_img" id="messageBoard" src="${MessageBoard}">
         <img class="home_card_img" id="appointment" src="${Appointment}">
         <img class="home_card_img round" id="resources" src="${Resources}">

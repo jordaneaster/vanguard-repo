@@ -7,14 +7,16 @@ form
 
 
 input[type=text], select, textarea {
-  width: 25%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-
-
+    width: 350px; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    
+  }
+  
   
   input form[type=submit] {
     background-color: red;
@@ -42,10 +44,13 @@ input[type=text], select, textarea {
     background-color: blue;
   }
   
-
+  #subject {
+    height:189px;
+    width: 648px;
+  }
   
    .container {
     border-radius: 5px;
-    background-color: gray;
+    background-color: rgb(236, 231, 231)ay;
     padding: 20px;
   }

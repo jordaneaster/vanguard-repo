@@ -1,14 +1,132 @@
-  
-* {
-  margin:0;
-  padding:0;
-}
 
 body {
-  background-color: rgb(156, 156, 156);
+  background-color: rgb(236, 231, 231);
+  text-align: center;
 }
 .login{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+.IntakeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template: 
+  "P1 P2";
+
+}
+.intake {
+  grid-area: P2;
+  margin-left: -900px;
+  margin-top: 100px;
+
+}
+.Img2__Profile {
+  grid-area: P1;
+  height: 500px;
+  margin-left: 200px;
+  margin-top: 100px;
+}
+
+
+.Img2__Assessment {
+  
+  margin-left: 110px;
+  border-radius: 20%;
+  margin-top: 30px;
+}
+.learnMore{
+  text-align: justify;
+  font-size: smaller;
+}
+
+.healthyResponse{
+  margin:auto;
+  display: flex;
+  flex-direction: row;
+  width:500px;
+  border-style:hidden;
+  border-radius: 10pt;
+  box-sizing: border-box;
+  overflow-x: scroll;
+  padding: 17px;
+  vertical-align: middle;
+}
+.moodPhoto{
+  border-radius: 10px;
+  padding: 7px;
+  height:min-content;
+}
+.myResponse{
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  border-style: groove;
+  border-radius: 15px;
+  border-color:cornflowerblue;
+  padding:8px;
+  
+}
+.responseAlert{
+  font-size: small;
+  vertical-align: middle;
+  padding: 8px;
+}
+.responseMood{
+  width: auto;
+  height:min-content;
+  vertical-align: middle;
+}
+.responseCoping{
+  width:auto;
+  height:min-content;
+  vertical-align: middle;
+}
+.copingDescription{
+ 
+ vertical-align: middle;
+}
+.moodDescription{
+  vertical-align: middle;
+  justify-content: center;
+ }
+
+
+
+@media only screen and (max-width:1000px) {
+  body {
+      display: block;
+margin-left: -10px;
+  }
+  .Img1__Assessment {
+    width: 90%
+  }
+  .IntakeGrid {
+    display: block
+  }
+  .Img2__Profile {
+    height: 200px;
+    margin-left: 0px;
+    margin-top: -25px;
+  }
+  .intake {
+    text-align: center;
+    height: 500px;
+    margin-left: 50px;
+    margin-top: 20px;
+     }
+     .Img1__Assessment  {
+       display: none;
+     }
+     .Img2__Assessment {
+       background-image: url(/images/Assess-Img2_s.png);
+       height: 250px;
+       background-repeat: no-repeat;
+       margin-left: 50px;
+     }
+     .assessmentMenu {
+       margin-top: 5px;
+     }
+
 }

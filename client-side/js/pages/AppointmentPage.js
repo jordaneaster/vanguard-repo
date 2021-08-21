@@ -1,7 +1,7 @@
 export default function AppointmentPage() {
   return `
     <link rel="stylesheet" href="css/form.css">
-      <h1>Schedule an appointment</h1>
+      <h1>Schedule An Appointment</h1>
       <form id="form1" method="post" action="javascript:alert('Submitted')">
       <div class="container">
       <div class="card">
@@ -10,16 +10,16 @@ export default function AppointmentPage() {
               <div class="section">
                   <div class="box">
                       
-                  </div><span>Date &amp; Time</span>
+                  </div><span>Date &amp; Time:</span>
               </div>
               <form action="" class="form__time">
                   <div class="date">
-                      <label for="date"> Appointment Date</label> <input id="date" type="date">
+                      <label for="date"> Appointment Date:</label> <input id="date" type="date">
                   </div>
                   <div class="time">
-                      <label for="time"> Appointment Time</label> <input id="time" type="time">
+                      <label for="time"> Appointment Time:</label> <input id="time" type="time">
                   </div>
-                  <span>  Martial Status</span>
+                  <span>  Martial Status:</span>
                   <select style="width: 280px" id="Mobility" name="Mobility">
     <option selected="">Please Select</option>
     <option>Married</option>
@@ -41,14 +41,14 @@ export default function AppointmentPage() {
   <option selected="">Please Select</option>
   <option> Still active</option></option>
   <option> Not active</option>
-  <option> Not a an active veteran </option>
+  <option> Not an active veteran </option>
   </select> </div>            
                   
           <div class="message__container">
               <div class="section">
                   <div class="box">
                       
-                  </div> Any Concerns to Address <span> </span>
+                  </div> Any Concerns to Address: <span> </span>
               </div>
               <textarea placeholder="e.g. Please do .. Also, .." cols="50" rows="5"></textarea>
           </div>
@@ -60,15 +60,16 @@ export default function AppointmentPage() {
               </div>
               <form action="" class="form__contact">
                   <div class="cname">
-                      <label for="cname">Name</label> <input placeholder="e.g. John Doe" id="cname" type="text">
+                      <label for="cname">Name:</label> <input placeholder="e.g. John Doe" id="cname" type="text">
                   </div>
                   <div class="cnum">
-                      <label for="cnum">Phone Number</label> <input id="cnum" type="text">
+                      <label for="cnum">Phone Number:</label> <input id="cnum" type="text">
                   </div>
                   <div class="email">
-                      <label for="cemail">Email</label> <input placeholder="e.g. example@email.com" id="cemail" type="email">
-                  </div>
+                      <label for="cemail">Email Address:</label> <input placeholder="e.g. example@email.com" id="cemail" type="email">
+                      </div>
               </form>
+              </br>
           </div>
           <div class="form__confirmation">
           <button>Confirm Appointment </button>

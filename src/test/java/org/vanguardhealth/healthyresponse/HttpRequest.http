@@ -1,2 +1,2 @@
-POST http://localhost:8080/send_response
+GET  http://localhost:8080/map
 ###

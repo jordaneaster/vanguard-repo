@@ -1,6 +1,7 @@
 package org.vanguardhealth.healthyresponse.models;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -19,6 +20,17 @@ public class IntakeProfile {
     private String status;
     @Lob
     private String aboutMe;
+
+    @OneToMany(mappedBy = "badge")
+    private List<Badge> badge;
+
+    public List<Badge> getBadge() {
+        return badge;
+    }
+
+    public void setBadge(List<Badge> badge) {
+        this.badge = badge;
+    }
 
     public Long getId() {
         return id;

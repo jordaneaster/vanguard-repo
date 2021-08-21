@@ -1,0 +1,128 @@
+[
+    {
+      "id": 2,
+      "mood": "Afraid",
+      "moodImage": "https://i.ibb.co/wcg76Dp/Afraid.jpg",
+      "moodDisclaimer": "Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.\n",
+      "moodArticle1": "<a href=https://www.verywellmind.com/the-psychology-of-fear-2671696 target=_blank>What is Fear?</a>",
+      "moodArticle2": "<a href=https://psychcentral.com/quizzes/anxiety-quiz#1 target=_blank>PsychCentral: Anxiety Screening Test</a>",
+      "moodArticle3": "<a href=https://www.verywellmind.com/healthy-ways-to-face-your-fears-4165487 target=_blank>How to Face Your Fears</a>",
+      "moodPhoneResource1": "<a href=tel:800-950-6264>National Alliance on Mental Illness (NAMI) Helpline: 1-800-950-NAMI (6264)</a>",
+      "moodPhoneResource2": "<a href=tel:800-662-4357>Substance Abuse and Mental Health Services Administration (SAMHSA) Helpline: 1-800-662-HELP (4357)</a>",
+      "moodPhoneResource3": "<a href=tel:800-273-8255>National Suicide Prevention Lifeline: 1-800-273-TALK (8255)</a>",
+      "moodVideo": "<iframe width=\"300\" height=\"300\" src=\"https://www.youtube.com/embed/O-6f5wQXSu8\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+    
+    },
+    {
+      "id": 3,
+      "mood": "Anxious",
+      "moodImage": "https://i.ibb.co/ZcdsPNB/Anxious.jpg",
+      "moodDisclaimer": "Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.\n",
+      "moodArticle1": "<a href=https://www.verywellhealth.com/anxiety-symptoms-5086955 target=_blank>Anxiety Symptoms</a>",
+      "moodArticle2": "<a href=https://psychcentral.com/quizzes/anxiety-quiz#1 target=_blank>PsychCentral: Anxiety Screening Test</a>",
+      "moodArticle3": "<a href=https://www.verywellmind.com/9-things-to-do-if-you-feel-anxious-5087875 target=_blank>9 Things To Do If You Feel Anxious</a>",
+      "moodPhoneResource1": "<a href=tel:800-950-6264>National Alliance on Mental Illness (NAMI) Helpline: 1-800-950-NAMI (6264)</a>",
+      "moodPhoneResource2": "<a href=tel:800-662-4357>Substance Abuse and Mental Health Services Administration (SAMHSA) Helpline: 1-800-662-HELP (4357)</a>",
+      "moodPhoneResource3": "<a href=tel:800-273-8255>National Suicide Prevention Lifeline: 1-800-273-TALK (8255)</a>",
+      "moodVideo": "<iframe width=\"300\" height=\"300\" src=\"https://www.youtube.com/embed/O-6f5wQXSu8\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+   
+    },
+    {
+      "id": 4,
+      "mood": "Depressed",
+      "moodImage": "https://i.ibb.co/3SfxPdm/Depressed.jpg",
+      "moodDisclaimer": "Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.\n",
+      "moodArticle1": "<a href=https://www.verywellmind.com/depression-4157261 target=_blank>Depression</a>",
+      "moodArticle2": "<a href=https://psychcentral.com/quizzes/depression-quiz target=_blank>PsychCentral: Do You Have Depression?</a>",
+      "moodArticle3": "<a href=https://www.verywellmind.com/how-do-i-tell-a-doctor-im-depressed-1067387 target=_blank>How to Tell Your Doctor You're Depressed</a>",
+      "moodPhoneResource1": "<a href=tel:800-662-4357>Substance Abuse and Mental Health Services Administration (SAMHSA) Helpline: 1-800-662-HELP (4357)</a>",
+      "moodPhoneResource2": "<a href=tel:800-784-2433>National Hopeline Network: 1-800-SUICIDE (784-2433)</a>",
+      "moodPhoneResource3": "<a href=tel:800-273-8255>National Suicide Prevention Lifeline: 1-800-273-TALK (8255)</a>",
+      "moodVideo": "<iframe width=\"300\" height=\"300\" src=\"https://www.youtube.com/embed/j7d5Plai03g\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+   
+    },
+    {
+      "id": 5,
+      "mood": "Exhausted",
+      "moodImage": "https://i.ibb.co/d5NLbdW/Exhausted.jpg",
+      "moodDisclaimer": "Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.\n",
+      "moodArticle1": "<a href=https://www.verywellhealth.com/fatigue-symptoms-causes-diagnosis-and-treatment-4768481 target=_blank>What Is Fatigue?</a>",
+      "moodArticle2": "<a href=https://psychcentral.com/quizzes/stress-test target=_blank>PsychCentral: How Stressed Are You?</a>",
+      "moodArticle3": "<a href=https://www.mentalhelp.net/blogs/give-yourself-a-break target=_blank>Give Yourself A Break</a>",
+      "moodPhoneResource1": "<a href=tel:741741>Crisis Text Line: Text “home” to 741741</a>",
+      "moodPhoneResource2": "<a href=tel:800-662-4357>Substance Abuse and Mental Health Services Administration (SAMHSA) Helpline: 1-800-662-HELP (4357)</a>",
+      "moodPhoneResource3": "<a href=tel:800-950-6264>National Alliance on Mental Illness (NAMI) Helpline: 1-800-950-NAMI (6264)</a>",
+      "moodVideo": "<iframe width=\"300\" height=\"300\" src=\"https://www.youtube.com/embed/z6X5oEIg6Ak\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+    
+    },
+    {
+      "id": 6,
+      "mood": "Violent",
+      "moodImage": "https://i.ibb.co/stzKxDz/Homicidal.jpg",
+      "moodDisclaimer": "Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.\n",
+      "moodArticle1": "<a href=https://www.verywellmind.com/what-is-anger-5120208 target=_blank>What Is Anger?</a>",
+      "moodArticle2": "<a href=https://www.psychologytoday.com/us/tests/personality/anger-management-test-abridged target=_blank>PsychCentral: Anger Management Test</a>",
+      "moodArticle3": "<a href=https://www.mentalhelp.net/anger/management/deciding-to-do-something/ target=_blank>Deciding To Manage Anger</a>",
+      "moodPhoneResource1": "<a href=tel:741741>Crisis Text Line: Text “home” to 741741</a>",
+      "moodPhoneResource2": "<a href=tel:800-662-4357>Substance Abuse and Mental Health Services Administration (SAMHSA) Helpline: 1-800-662-HELP (4357)</a>",
+      "moodPhoneResource3": "<a href=tel:800-950-6264>National Alliance on Mental Illness (NAMI) Helpline: 1-800-950-NAMI (6264)</a>",
+      "moodVideo": "<iframe width=\"300\" height=\"300\" src=\"https://www.youtube.com/embed/wkse4PPxkk4\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+     
+    },
+    {
+      "id": 7,
+      "mood": "Hopeless",
+      "moodImage": "https://i.ibb.co/LNDqPDH/Hopeless.jpg",
+      "moodDisclaimer": "Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.\n",
+      "moodArticle1": "<a href=https://psychcentral.com/blog/the-9-types-of-hopelessness-and-how-to-overcome-them target=_blank>9 Types of Hopelessness and How to Overcome Them</a>",
+      "moodArticle2": "<a href=https://psychcentral.com/quizzes/depression-quiz target=_blank>PsychCentral: Do You Have Depression?</a>",
+      "moodArticle3": "<a href=https://www.verywellmind.com/9-things-to-do-if-you-feel-hopeless-5081877 target=_blank>9 Things to Do If You Feel Hopeless</a>",
+      "moodPhoneResource1": "<a href=tel:800-662-4357>Substance Abuse and Mental Health Services Administration (SAMHSA) Helpline: 1-800-662-HELP (4357)</a>",
+      "moodPhoneResource2": "<a href=tel:800-784-2433>National Hopeline Network: 1-800-SUICIDE (784-2433)</a>",
+      "moodPhoneResource3": "<a href=tel:800-273-8255>National Suicide Prevention Lifeline: 1-800-273-TALK (8255)</a>",
+      "moodVideo": "<iframe width=\"300\" height=\"300\" src=\"https://www.youtube.com/embed/xRxT9cOKiM8\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+     
+    },
+    {
+      "id": 8,
+      "mood": "Lonely",
+      "moodImage": "https://i.ibb.co/DkPKB17/Lonely.jpg",
+      "moodDisclaimer": "Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.\n",
+      "moodArticle1": "<a href=https://www.verywellmind.com/loneliness-causes-effects-and-treatments-2795749 target=_blank>Loneliness: Causes and Health Consequences</a>",
+      "moodArticle2": "<a href=https://psychcentral.com/quizzes/loneliness-quiz target=_blank>PsychCentral: The Loneliness Quiz</a>",
+      "moodArticle3": "<a href=https://www.verywellmind.com/how-to-cope-with-loneliness-3144939 target=_blank>9 Ways to Cope With Loneliness</a>",
+      "moodPhoneResource1": "<a href=tel:741741>Crisis Text Line: Text “home” to 741741</a>",
+      "moodPhoneResource2": "<a href=tel:800-662-4357>Substance Abuse and Mental Health Services Administration (SAMHSA) Helpline: 1-800-662-HELP (4357)</a>",
+      "moodPhoneResource3": "<a href=tel:800-950-6264>National Alliance on Mental Illness (NAMI) Helpline: 1-800-950-NAMI (6264)</a>",
+      "moodVideo": "<iframe width=\"300\" height=\"300\" src=\"https://www.youtube.com/embed/itZMM5gCboo\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+      
+    },
+    {
+      "id": 9,
+      "mood": "Sad",
+      "moodImage": "https://i.ibb.co/ZWc6p9H/Sad.jpg",
+      "moodDisclaimer": "Healthy Response is not a diagnostic tool. Only a trained medical professional, like a doctor or mental health professional, can help you determine the next best steps for you.\n",
+      "moodArticle1": "<a href=https://www.verywellmind.com/sadness-is-not-depression-2330492 target=_blank>What is Sadness?</a>",
+      "moodArticle2": "<a href=https://psychcentral.com/quizzes/depression-quiz target=_blank>PsychCentral: Do You Have Depression?</a>",
+      "moodArticle3": "<a href=https://www.gundersenhealth.org/health-wellness/live-happy/healthy-ways-to-deal-with-sadness/ target=_blank>Healthy Ways To Deal With Sadness</a>",
+      "moodPhoneResource1": "<a href=tel:800-662-4357>Substance Abuse and Mental Health Services Administration (SAMHSA) Helpline: 1-800-662-HELP (4357)</a>",
+      "moodPhoneResource2": "<a href=tel:800-784-2433> National Hopeline Network: 1-800-SUICIDE (784-2433</a>",
+      "moodPhoneResource3": "<a href=tel:800-273-8255>National Suicide Prevention Lifeline: 1-800-273-TALK (8255)</a>",
+      "moodVideo": "<iframe width=\"300\" height=\"300\" src=\"https://www.youtube.com/embed/j7d5Plai03g\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+     
+    },
+    {
+      "id": 10,
+      "mood": "Suicidal",
+      "moodImage": "https://i.ibb.co/j3KHsM6/National-Suicide-Prevention-Hotline-1-800-273-8255.jpg",
+      "moodDisclaimer": "If you are feeling suicidal, thinking about hurting yourself, or are concerned that someone you know may be in danger of hurting himself or herself, call the National Suicide Prevention Lifeline at 1-800-273-TALK (1-800-273-8255). It is available 24 hours a day, 7 days a week and is staffed by certified crisis response professionals.",
+      "moodArticle1": "<a href=https://www.verywellmind.com/suicide-4157253 target=_blank>Understanding Suicide</a>",
+      "moodArticle2": "",
+      "moodArticle3": "<a href=https://www.mentalhelp.net/suicide/about-asking-for-help/ target=_blank>Suicide: What will happen to you when you ask for help?</a>",
+      "moodPhoneResource1": "<a href=tel:800-273-8255>National Suicide Prevention Lifeline: 1-800-273-TALK (8255)</a>",
+      "moodPhoneResource2": "<a href=tel:>Dial 911</a>",
+      "moodPhoneResource3": "",
+      "moodVideo": ""
+  
+}
+]

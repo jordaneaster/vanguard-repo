@@ -1,2 +1,26 @@
+.userClassContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 
-.
+}
+
+.moodHeader, .triggerHeader, .copingHeader {
+    align-items: center;
+}
+
+.coping_disclaimer {
+   padding-bottom: 2px;
+   padding-top: 2px;
+   margin-bottom: 10px;
+    align-items: center;
+}
+.coping_disclaimer:hover {
+    color: red;
+
+}
+
+.userDiv2 {
+    padding-left: 20px;
+    padding-top: 20px;
+}

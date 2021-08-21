@@ -1,5 +1,10 @@
+import '../../css/style.css'
+import Img2 from "../../images/Assess-Img2.png"
 export default function AssessmentPage() {
   return `
+  
+ <img class="Img1__Assessment" src="${Img2}">
+ <div class="Img2__Assessment"></div>
         <div class="assessmentMenu">
         <select name="cbtMood" id="assessMood" style="width: 100px;" class="intakeMood">
           <option value="userMood" class="cbt1">I feel..</option>
